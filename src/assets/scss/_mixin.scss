@@ -1,0 +1,30 @@
+
+/* Variables */
+$white-smoke: rgba(0, 0, 0, 0.15);
+$gray-dark: #202020;
+$gizra: #e27058;
+
+/* Desktop */
+@mixin desktop-only {
+  @media (min-width: $screen-sm-min) {
+    @content;
+  }
+}
+
+/* Mobile */
+@mixin mobile-only {
+  @media (max-width: $screen-xs-max) {
+    @content;
+  }
+}
+
+/* Border radius */
+@mixin border-radius ( $value: 3px ) {
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  border-radius: $value;
+  // keeps background from busting out of border
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+}

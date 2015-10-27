@@ -1,0 +1,60 @@
+/* 
+The main SCSS file for everything, yep
+*/
+
+@import "mixin";
+@import "custom_bootstrap";
+@import "poole";
+@import "syntax";
+@import "lanyon";
+
+body {
+  font-family: 'Fira Sans', arial, sans-serif;
+  background: rgba(187, 182, 162, 0.3);
+}
+
+.masthead {
+  background-color: $gray-dark;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.info {
+
+  @include desktop-only {
+    float: right;
+  }
+
+  @include desktop-only {
+    float: none;
+    text-align: center;
+  }
+
+}
+
+.gizra-logo {
+  font-size: 20px;
+  text-transform: lowercase;
+  font-family: Abril Fatface;
+  color: $gizra;
+}
+
+.wrapper {
+  @include box-shadow(0px 4px 1px 0px rgba(0, 0, 0, 0.05));
+  @include border-radius(5px);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  background: white;
+
+  .box {
+    color: gray;
+    padding: 20px;
+    border-right: 1px solid $white-smoke;
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}
