@@ -28,7 +28,7 @@ body {
     float: right;
   }
 
-  @include desktop-only {
+  @include mobile-only {
     float: none;
     text-align: center;
   }

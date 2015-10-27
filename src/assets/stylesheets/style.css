@@ -5721,7 +5721,7 @@ body {
 @media (min-width: 768px) {
   .info {
     float: right; } }
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .info {
     float: none;
     text-align: center; } }
