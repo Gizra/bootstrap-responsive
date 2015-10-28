@@ -13,6 +13,36 @@ body {
   background: rgba(187, 182, 162, 0.3);
 }
 
+.responsive-points {
+  width: 100%;
+  color: white;
+
+  div {
+    padding: 3px;
+
+    &.visible-xs {
+      background: $gizra;
+    }
+
+    &.visible-sm {
+      background: #ff9a45;
+    }
+
+    &.visible-md {
+      background: #238f76;
+    }
+
+    &.visible-lg {
+      background: rgba(18, 133, 255, 0.78);
+    }
+
+  }
+
+
+
+
+}
+
 .masthead {
   background-color: $gray-dark;
 
