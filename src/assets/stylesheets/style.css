@@ -6529,6 +6529,18 @@ body {
     .responsive-points div.visible-lg {
       background: rgba(18, 133, 255, 0.78); }
 
+h3 {
+  color: #A95C4C;
+  margin-bottom: 0px;
+  font-family: 'Droid Serif', serif; }
+
+hr {
+  display: block;
+  margin: 11px 0px;
+  height: 1px;
+  border-bottom: 1px solid #dad9d1;
+  background: #EAE9E3; }
+
 .masthead {
   background-color: #202020; }
   .masthead a {
@@ -6550,14 +6562,13 @@ body {
   font-family: Abril Fatface;
   color: #e27058; }
 
-.wrapper {
+.wrapper .box div {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid rgba(128, 128, 128, 0.28);
   border-radius: 5px;
   background-clip: padding-box;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  background: white; }
-  .wrapper .box {
-    color: gray;
-    padding: 20px;
-    border-right: 1px solid rgba(0, 0, 0, 0.15); }
-    .wrapper .box:last-child {
-      border-right: none; }
+  color: #e27058;
+  background: white;
+  box-shadow: 0px 6px 7px -3px rgba(0, 0, 0, 0.06);
+  margin-bottom: 10px; }
