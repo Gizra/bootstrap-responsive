@@ -12,14 +12,14 @@ $container-md:  $custom-desktop-width;
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
 /* Desktop */
-@mixin custom-desktop {
+@mixin desktop {
   @media (min-width: $screen-sm-min) {
     @content;
   }
 }
 
 /* Mobile */
-@mixin custom-mobile {
+@mixin mobile {
   @media (max-width: $screen-xs-max) {
     @content;
   }

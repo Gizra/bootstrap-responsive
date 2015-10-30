@@ -1,0 +1,54 @@
+header {
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  background-color: $gray-dark;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .links {
+    padding-left: 0px;
+    list-style: none;
+
+    @include desktop {
+      float: right;
+      height: 36px;
+      line-height: 36px;
+    }
+
+    @include mobile {
+      float: none;
+      text-align: center;
+    }
+
+    li {
+      display: inline;
+
+      &:hover {
+
+        a {
+          color: inherit;
+        }
+      }
+
+      &:not(:first-child):before {
+        content: "|";
+        padding-right: 3px;
+        color: white;
+      }
+
+      a {
+        text-decoration: none;
+
+        span {
+          color: #848484;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

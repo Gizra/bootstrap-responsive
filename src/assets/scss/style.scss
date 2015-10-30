@@ -2,6 +2,7 @@
 @import "custom_bootstrap";
 @import "default_bootstrap";
 @import "breakpoint_live_monitor";
+@import "header";
 
 body {
   font-family: 'Fira Sans', arial, sans-serif;
@@ -16,7 +17,7 @@ h1 {
     color: white;
   }
 
-  @include custom-mobile {
+  @include mobile {
     text-align: center;
   }
 }
@@ -35,70 +36,11 @@ hr {
   background: #EAE9E3;
 }
 
-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: white;
-  background-color: $gray-dark;
-  margin-bottom: 10px;
-
-  a {
-    color: white;
-    text-decoration: none;
-  }
-}
-
-.links {
-  padding-left: 0px;
-  list-style: none;
-
-  @include custom-desktop {
-    float: right;
-    height: 36px;
-    line-height: 36px;
-  }
-
-  @include custom-mobile {
-    float: none;
-    text-align: center;
-  }
-
-  li {
-    display: inline;
-
-    &:hover {
-
-      a {
-        color: inherit;
-      }
-    }
-
-    &:not(:first-child):before {
-      content: "|";
-      padding-right: 3px;
-      color: white;
-    }
-
-    a {
-     text-decoration: none;
-
-     span {
-       color: #848484;
-       text-decoration: none;
-     }
-    }
-  }
-}
-
 .gizra-logo {
   font-size: 20px;
   text-transform: lowercase;
   font-family: Abril Fatface;
   color: $gizra;
-
-//  &:hover {
-//    color: $gizra-dark;
-//  }
 }
 
 .wrapper {

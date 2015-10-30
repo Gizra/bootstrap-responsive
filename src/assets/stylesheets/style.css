@@ -5807,6 +5807,41 @@ button.close {
     #breakpoint-live-monitor {
       background-color: rgba(148, 49, 40, 0.61); } }
 
+header {
+  margin-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+  background-color: #202020; }
+  header a {
+    color: white;
+    text-decoration: none; }
+  header .links {
+    padding-left: 0px;
+    list-style: none; }
+    @media (min-width: 768px) {
+      header .links {
+        float: right;
+        height: 36px;
+        line-height: 36px; } }
+    @media (max-width: 767px) {
+      header .links {
+        float: none;
+        text-align: center; } }
+    header .links li {
+      display: inline; }
+      header .links li:hover a {
+        color: inherit; }
+      header .links li:not(:first-child):before {
+        content: "|";
+        padding-right: 3px;
+        color: white; }
+      header .links li a {
+        text-decoration: none; }
+        header .links li a span {
+          color: #848484;
+          text-decoration: none; }
+
 body {
   font-family: 'Fira Sans', arial, sans-serif;
   background: rgba(187, 182, 162, 0.3); }
@@ -5831,42 +5866,6 @@ hr {
   height: 1px;
   border-bottom: 1px solid #dad9d1;
   background: #EAE9E3; }
-
-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  color: white;
-  background-color: #202020;
-  margin-bottom: 10px; }
-  header a {
-    color: white;
-    text-decoration: none; }
-
-.links {
-  padding-left: 0px;
-  list-style: none; }
-  @media (min-width: 768px) {
-    .links {
-      float: right;
-      height: 36px;
-      line-height: 36px; } }
-  @media (max-width: 767px) {
-    .links {
-      float: none;
-      text-align: center; } }
-  .links li {
-    display: inline; }
-    .links li:hover a {
-      color: inherit; }
-    .links li:not(:first-child):before {
-      content: "|";
-      padding-right: 3px;
-      color: white; }
-    .links li a {
-      text-decoration: none; }
-      .links li a span {
-        color: #848484;
-        text-decoration: none; }
 
 .gizra-logo {
   font-size: 20px;
