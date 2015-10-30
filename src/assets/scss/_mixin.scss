@@ -3,14 +3,11 @@ $white-smoke: rgba(0, 0, 0, 0.15);
 $gray-dark: #202020;
 $gizra: #e27058;
 $gizra-dark: #A95C4C;
-$pastel-orange: #ff9a45;
-$pastel-green: #238f76;
-$pastel-blue: rgba(18, 133, 255, 0.78);
-
-* {
-  transition: color 1.5s ease-in;
-  transition: background-color 1s ease-in;
-}
+$title: #676363;
+$pastel-red: rgba(148, 49, 40, 0.61);
+$pastel-orange: rgba(255, 154, 69, 0.77);
+$pastel-green: rgba(35, 143, 118, 0.86);
+$pastel-blue: rgba(18, 106, 214, 0.63);
 
 /* Border radius */
 @mixin border-radius ($value: 3px) {
@@ -21,4 +18,35 @@ $pastel-blue: rgba(18, 133, 255, 0.78);
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box;
+}
+
+/* Transition */
+@mixin transition($args) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+@mixin responsive {
+
+  @include transition(background-color 0.7s ease);
+
+  @include col-lg {
+    background-color: $pastel-blue;
+  }
+
+  @include col-md {
+    background-color: $pastel-green;
+  }
+
+  @include col-sm {
+    background-color: $pastel-orange;
+  }
+
+  @include col-xs {
+    background-color: $pastel-red;
+  }
+
 }

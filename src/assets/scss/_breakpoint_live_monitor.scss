@@ -2,20 +2,5 @@
   color: white;
   padding: 3px;
   background: red;
-
-    &.visible-xs {
-      background-color: $gizra;
-    }
-
-    &.visible-sm {
-      background-color: $pastel-orange;
-    }
-
-    &.visible-md {
-      background-color: $pastel-green
-    }
-
-    &.visible-lg {
-      background-color: $pastel-blue;
-    }
+  @include responsive;
 }

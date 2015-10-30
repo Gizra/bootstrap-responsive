@@ -8,22 +8,9 @@ body {
   background: rgba(187, 182, 162, 0.3);
 }
 
-.main-title {
+h1 {
   margin: 0px;
-  font-size: 39px;
-  color: $pastel-blue;
-
-  @include col-md {
-    color: $pastel-green;
-  }
-
-  @include col-sm {
-    color: $pastel-orange;
-  }
-
-  @include col-xs {
-    color: $gizra;
-  }
+  font-size: 32px;
 
   i {
     color: white;
@@ -32,17 +19,10 @@ body {
   @include custom-mobile {
     text-align: center;
   }
-
-  img {
-    float: left;
-    margin-right: 8px;
-    width: 32px;
-    height: 32px;
-  }
 }
 
 h3 {
-  color: $gizra-dark;
+  color: $title;
   font-family: 'Droid Serif', serif;
   margin-bottom: 25px;
 }
@@ -56,6 +36,9 @@ hr {
 }
 
 header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
   background-color: $gray-dark;
   margin-bottom: 10px;
 
@@ -69,8 +52,8 @@ header {
 
   @include custom-desktop {
     float: right;
-    height: 48px;
-    line-height: 48px;
+    height: 36px;
+    line-height: 36px;
   }
 
   @include custom-mobile {
@@ -87,17 +70,16 @@ header {
 }
 
 .wrapper {
-
   .box {
     div {
       padding-top: 20px;
       padding-bottom: 20px;
       border: 1px solid rgba(128, 128, 128, 0.28);
       @include border-radius(5px);
-      color: $gizra;
-      background: white;
+      color: white;
       @include box-shadow(0px 6px 7px -3px rgba(0, 0, 0, 0.06));
       margin-bottom: 10px;
+      @include responsive;
     }
   }
 }
