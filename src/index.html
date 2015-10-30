@@ -3,7 +3,16 @@ layout: default
 title: Home
 ---
 
-<div class="row">
-  <!-- Example-1 -->
-  {% include examples/example-1.html %}
+<div class="container">
+  <div class="row">
+    <!-- Our custom responsive layout -->
+    {% include examples/custom-layout.html %}
+  </div>
 </div>
+<div class="container">
+  <div class="row">
+    <!-- Bootstrap default responsive layout and grid system -->
+    {% include examples/bootstrap-default-layout.html %}
+  </div>
+</div>
+

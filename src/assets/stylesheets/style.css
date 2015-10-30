@@ -6515,6 +6515,18 @@ body {
   font-family: 'Fira Sans', arial, sans-serif;
   background: rgba(187, 182, 162, 0.3); }
 
+.main-title {
+  margin: 0px;
+  font-size: 39px; }
+  @media (max-width: 767px) {
+    .main-title {
+      text-align: center; } }
+  .main-title img {
+    float: left;
+    margin-right: 8px;
+    width: 32px;
+    height: 32px; }
+
 .responsive-points {
   width: 100%;
   color: white; }
@@ -6542,14 +6554,17 @@ hr {
   background: #EAE9E3; }
 
 .masthead {
-  background-color: #202020; }
+  background-color: #202020;
+  margin-bottom: 10px; }
   .masthead a {
     color: white;
     text-decoration: none; }
 
 @media (min-width: 768px) {
   .info {
-    float: right; } }
+    float: right;
+    height: 48px;
+    line-height: 48px; } }
 
 @media (max-width: 767px) {
   .info {
