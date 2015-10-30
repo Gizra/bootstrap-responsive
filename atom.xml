@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
- <title>bootstrap responsive helper</title>
+ <title>Simplify Twitter Bootstrap</title>
  <link href="http://yaronmiro.github.io/bootstrap-responsive-helper//atom.xml" rel="self"/>
  <link href="http://yaronmiro.github.io/bootstrap-responsive-helper//"/>
- <updated>2015-10-28T08:48:26+02:00</updated>
+ <updated>2015-10-30T20:55:24+02:00</updated>
  <id>http://yaronmiro.github.io/bootstrap-responsive-helper/</id>
  <author>
    <name>yaronMiro</name>
