@@ -1,6 +1,7 @@
 @import "mixin";
 @import "custom_bootstrap";
 @import "default_bootstrap";
+@import "breakpoint_live_monitor";
 
 body {
   font-family: 'Fira Sans', arial, sans-serif;
@@ -37,31 +38,6 @@ body {
     margin-right: 8px;
     width: 32px;
     height: 32px;
-  }
-}
-
-.responsive-points {
-  width: 100%;
-  color: white;
-
-  div {
-    padding: 3px;
-
-    &.visible-xs {
-      background: $gizra;
-    }
-
-    &.visible-sm {
-      background: $pastel-orange;
-    }
-
-    &.visible-md {
-      background: $pastel-green
-    }
-
-    &.visible-lg {
-      background: $pastel-blue;
-    }
   }
 }
 

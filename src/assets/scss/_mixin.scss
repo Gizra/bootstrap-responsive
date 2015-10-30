@@ -1,4 +1,3 @@
-
 /* Variables */
 $white-smoke: rgba(0, 0, 0, 0.15);
 $gray-dark: #202020;
@@ -8,18 +7,9 @@ $pastel-orange: #ff9a45;
 $pastel-green: #238f76;
 $pastel-blue: rgba(18, 133, 255, 0.78);
 
-/* Desktop */
-@mixin custom-desktop {
-  @media (min-width: $screen-sm-min) {
-    @content;
-  }
-}
-
-/* Mobile */
-@mixin custom-mobile {
-  @media (max-width: $screen-xs-max) {
-    @content;
-  }
+* {
+  transition: color 1.5s ease-in;
+  transition: background-color 1s ease-in;
 }
 
 /* Border radius */

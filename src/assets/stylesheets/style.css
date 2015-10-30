@@ -2,6 +2,12 @@
 /* Variables */
 /* Desktop */
 /* Mobile */
+* {
+  -webkit-transition: color 1.5s ease-in;
+          transition: color 1.5s ease-in;
+  -webkit-transition: background-color 1s ease-in;
+          transition: background-color 1s ease-in; }
+
 /* Border radius */
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
@@ -5787,6 +5793,19 @@ button.close {
 /* col-sm. */
 /* col-md */
 /* col-lg. */
+#breakpoint-live-monitor {
+  color: white;
+  padding: 3px;
+  background: red; }
+  #breakpoint-live-monitor.visible-xs {
+    background-color: #e27058; }
+  #breakpoint-live-monitor.visible-sm {
+    background-color: #ff9a45; }
+  #breakpoint-live-monitor.visible-md {
+    background-color: #238f76; }
+  #breakpoint-live-monitor.visible-lg {
+    background-color: rgba(18, 133, 255, 0.78); }
+
 body {
   font-family: 'Fira Sans', arial, sans-serif;
   background: rgba(187, 182, 162, 0.3); }
@@ -5814,20 +5833,6 @@ body {
     margin-right: 8px;
     width: 32px;
     height: 32px; }
-
-.responsive-points {
-  width: 100%;
-  color: white; }
-  .responsive-points div {
-    padding: 3px; }
-    .responsive-points div.visible-xs {
-      background: #e27058; }
-    .responsive-points div.visible-sm {
-      background: #ff9a45; }
-    .responsive-points div.visible-md {
-      background: #238f76; }
-    .responsive-points div.visible-lg {
-      background: rgba(18, 133, 255, 0.78); }
 
 h3 {
   color: #A95C4C;

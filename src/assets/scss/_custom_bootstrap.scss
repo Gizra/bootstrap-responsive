@@ -10,3 +10,17 @@ $container-sm:  $custom-desktop-width ;
 $container-md:  $custom-desktop-width;
 
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+
+/* Desktop */
+@mixin custom-desktop {
+  @media (min-width: $screen-sm-min) {
+    @content;
+  }
+}
+
+/* Mobile */
+@mixin custom-mobile {
+  @media (max-width: $screen-xs-max) {
+    @content;
+  }
+}
