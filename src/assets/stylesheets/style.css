@@ -5859,6 +5859,9 @@ h3 {
   color: #676363;
   font-family: 'Droid Serif', serif;
   margin-bottom: 25px; }
+  @media (max-width: 767px) {
+    h3 {
+      text-align: center; } }
 
 hr {
   display: block;
@@ -5874,7 +5877,7 @@ hr {
   color: #e27058; }
 
 .wrapper .box div {
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   padding-top: 20px;
   padding-bottom: 20px;
   border: 1px solid rgba(128, 128, 128, 0.28);
