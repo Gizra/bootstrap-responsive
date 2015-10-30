@@ -3,22 +3,23 @@
   {% include head.html %}
   <body>
   {% include debug-responsive.html %}
-    <div class="wrap">
-      <div class="masthead">
-        <div class="container">
-          <div class="row">
-            <h1 class="col-sm-8 main-title"><img src="assets/images/logo.jpg
-              <div class="info">
-                <a href="http://www.gizra.com"><span class="gizra-logo">gizra</span></a> |
-                <a href="https://github.com/YaronMiro">Yaron Miro</a>
-              </div>
-            </div>
+  <header>
+    <div class="container">
+      <div class="row">
+        <h1 class="col-sm-8 main-title">
+          Simplify <i class="fa fa-twitter"></i> Bootstrap
+        </h1>
+        <div class="col-sm-4">
+          <div class="info">
+            <a href="http://www.gizra.com"><span class="gizra-logo">gizra</span></a> |
+            <a href="https://github.com/YaronMiro">Yaron Miro</a>
           </div>
         </div>
       </div>
-      <div class="content">
-        {{ content }}
-      </div>
+    </div>
+    </header>
+    <div class="content">
+      {{ content }}
     </div>
   </body>
 </html>

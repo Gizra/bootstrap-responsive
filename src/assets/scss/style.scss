@@ -1,12 +1,6 @@
-/* 
-The main SCSS file for everything, yep
-*/
-
 @import "mixin";
 @import "custom_bootstrap";
-@import "poole";
-@import "syntax";
-@import "lanyon";
+@import "default_bootstrap";
 
 body {
   font-family: 'Fira Sans', arial, sans-serif;
@@ -16,8 +10,25 @@ body {
 .main-title {
   margin: 0px;
   font-size: 39px;
+  color: $pastel-blue;
 
-  @include mobile-only {
+  @include col-md {
+    color: $pastel-green;
+  }
+
+  @include col-sm {
+    color: $pastel-orange;
+  }
+
+  @include col-xs {
+    color: $gizra;
+  }
+
+  i {
+    color: white;
+  }
+
+  @include custom-mobile {
     text-align: center;
   }
 
@@ -41,15 +52,15 @@ body {
     }
 
     &.visible-sm {
-      background: #ff9a45;
+      background: $pastel-orange;
     }
 
     &.visible-md {
-      background: #238f76;
+      background: $pastel-green
     }
 
     &.visible-lg {
-      background: rgba(18, 133, 255, 0.78);
+      background: $pastel-blue;
     }
   }
 }
@@ -68,7 +79,7 @@ hr {
   background: #EAE9E3;
 }
 
-.masthead {
+header {
   background-color: $gray-dark;
   margin-bottom: 10px;
 
@@ -80,13 +91,13 @@ hr {
 
 .info {
 
-  @include desktop-only {
+  @include custom-desktop {
     float: right;
     height: 48px;
     line-height: 48px;
   }
 
-  @include mobile-only {
+  @include custom-mobile {
     float: none;
     text-align: center;
   }

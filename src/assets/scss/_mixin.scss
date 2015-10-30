@@ -4,23 +4,26 @@ $white-smoke: rgba(0, 0, 0, 0.15);
 $gray-dark: #202020;
 $gizra: #e27058;
 $gizra-dark: #A95C4C;
+$pastel-orange: #ff9a45;
+$pastel-green: #238f76;
+$pastel-blue: rgba(18, 133, 255, 0.78);
 
 /* Desktop */
-@mixin desktop-only {
+@mixin custom-desktop {
   @media (min-width: $screen-sm-min) {
     @content;
   }
 }
 
 /* Mobile */
-@mixin mobile-only {
+@mixin custom-mobile {
   @media (max-width: $screen-xs-max) {
     @content;
   }
 }
 
 /* Border radius */
-@mixin border-radius ( $value: 3px ) {
+@mixin border-radius ($value: 3px) {
   -webkit-border-radius: $value;
   -moz-border-radius: $value;
   border-radius: $value;

@@ -1,0 +1,37 @@
+.container{
+  &#default-bootstrap {
+    // col-sm.
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      width: (720px + $grid-gutter-width);
+    }
+    // col-md.
+    @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+      width: (940px + $grid-gutter-width);
+    }
+  }
+}
+
+/* col-xs. */
+@mixin col-xs {
+  @media (max-width: $screen-xs-max) {
+    @content;
+  }
+}
+/* col-sm. */
+@mixin col-sm {
+  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    @content;
+  }
+}
+/* col-md */
+@mixin col-md {
+  @media (min-width: $screen-md-min)and (max-width: $screen-md-max) {
+    @content;
+  }
+}
+/* col-lg. */
+@mixin col-lg {
+  @media (min-width: $screen-lg-min) {
+    @content;
+  }
+}
