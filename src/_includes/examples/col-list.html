@@ -1,4 +1,20 @@
-<span class="visible-xs">col-xs-{{ site.data.grid.bootstrap-default }}</span>
-<span class="visible-sm">col-sm</span>
-<span class="visible-md">col-md</span>
-<span class="visible-lg">col-lg-{{ site.data.grid[include.type] }}</span>
+{% assign = type = site.data.grid[include.type] %}
+
+{% if type.xs %}
+  <span class="visible-xs">col-xs{{ type.xs | prepend:'-' }}</span>
+{% endif %}
+
+{% if type.sm %}
+  <span class="visible-sm">col-sm{{ type.sm| prepend:'-' }}</span>
+{% endif %}
+
+{% if type.md %}
+  <span class="visible-md">col-md{{ type.md| prepend:'-' }}</span>
+{% endif %}
+
+{% if type.lg %}
+  <span class="visible-lg">col-lg{{ type.lg| prepend:'-' }}</span>
+{% endif %}
+
+
+
