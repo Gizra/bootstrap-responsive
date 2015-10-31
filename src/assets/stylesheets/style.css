@@ -5837,6 +5837,7 @@ button.close {
       #main-header .links li:hover a {
         color: inherit; }
       #main-header .links li:not(:first-child):before {
+        content: "|";
         padding-right: 7px;
         padding-left: 7px;
         color: rgba(255, 255, 255, 0.52); }
