@@ -3,7 +3,12 @@ header {
   padding-top: 20px;
   padding-bottom: 20px;
   color: white;
-  background-color: $gray-dark;
+  background-color: $header-bg;
+
+
+  h1 i {
+    color: $gray-light;
+  }
 
   a {
     color: white;
@@ -45,7 +50,7 @@ header {
         text-decoration: none;
 
         span {
-          color: #848484;
+          color: $gray-light;
           text-decoration: none;
         }
       }
