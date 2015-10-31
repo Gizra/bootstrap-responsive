@@ -40,9 +40,9 @@
       }
 
       &:not(:first-child):before {
-        content: "|";
-        padding-right: 3px;
-        color: white;
+        padding-right: 7px;
+        padding-left: 7px;
+        color: rgba(255, 255, 255, 0.52);
       }
 
       a {
