@@ -23,13 +23,19 @@ h1 {
 }
 
 h3 {
-  color: $title;
+  color: $text;
   font-family: 'Droid Serif', serif;
-  margin-bottom: 25px;
+  margin-bottom: 0px;
+}
 
-  @include mobile {
-    text-align: center;
-  }
+pre {
+  display: inline-block;
+  padding: 3px;
+  margin: 0px 0px 0px 5px;
+  color: #E27057;
+  background-color: #f5f5f5;
+  border: 1px solid rgba(204, 204, 204, 0);
+  vertical-align: middle;
 }
 
 hr {
@@ -40,6 +46,29 @@ hr {
   background: #EAE9E3;
 }
 
+.col-lg-color {
+  color: $col-lg;
+}
+
+.col-md-color {
+  color: $col-md;
+}
+
+.col-sm-color {
+  color: $col-sm;
+}
+
+.col-xs-color {
+  bcolor: $col-xs;
+}
+
+.description {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: $text;
+  font-size: 18px;
+}
+
 .gizra-logo {
   font-size: 20px;
   text-transform: lowercase;
@@ -47,18 +76,35 @@ hr {
   color: $gizra;
 }
 
-.wrapper {
-  .box {
-    div {
-      margin-bottom: 25px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      border: 1px solid rgba(128, 128, 128, 0.28);
-      @include border-radius(5px);
-      color: white;
-      @include responsive;
-      font-weight: bold;
-      @include box-shadow(0px 6px 7px -3px rgba(0, 0, 0, 0.06));
+#custom-layout,
+#default-bootstrap {
+
+  header {
+    @include mobile {
+      text-align: center;
     }
+  }
+
+  .box div {
+    margin-bottom: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: 1px solid rgba(128, 128, 128, 0.28);
+    @include border-radius(5px);
+    color: white;
+    font-weight: bold;
+    @include box-shadow(0px 6px 7px -3px rgba(0, 0, 0, 0.06));
+  }
+}
+
+#custom-layout {
+  .box div {
+    @include responsive-custom-layout;
+  }
+}
+
+#default-bootstrap {
+  .box div {
+    @include responsive-default-bootstrap;
   }
 }

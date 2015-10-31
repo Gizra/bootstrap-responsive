@@ -2,6 +2,7 @@
 /* Variables */
 /* Border radius */
 /* Transition */
+/* Color change mixin by "default-bootstrap" layout */
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5776,6 +5777,7 @@ button.close {
 
 /* Desktop */
 /* Mobile */
+/* Color change mixin by "custom-layout" layout */
 @media (min-width: 768px) and (max-width: 991px) {
   .container#default-bootstrap {
     width: 750px; } }
@@ -5807,40 +5809,40 @@ button.close {
     #breakpoint-live-monitor {
       background-color: rgba(148, 49, 40, 0.61); } }
 
-header {
+#main-header {
   margin-bottom: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
   color: white;
   background-color: #2D2D38; }
-  header h1 i {
+  #main-header h1 i {
     color: rgba(255, 255, 255, 0.66); }
-  header a {
+  #main-header a {
     color: white;
     text-decoration: none; }
-  header .links {
+  #main-header .links {
     padding-left: 0px;
     list-style: none; }
     @media (min-width: 768px) {
-      header .links {
+      #main-header .links {
         float: right;
         height: 36px;
         line-height: 36px; } }
     @media (max-width: 767px) {
-      header .links {
+      #main-header .links {
         float: none;
         text-align: center; } }
-    header .links li {
+    #main-header .links li {
       display: inline; }
-      header .links li:hover a {
+      #main-header .links li:hover a {
         color: inherit; }
-      header .links li:not(:first-child):before {
+      #main-header .links li:not(:first-child):before {
         content: "|";
         padding-right: 3px;
         color: white; }
-      header .links li a {
+      #main-header .links li a {
         text-decoration: none; }
-        header .links li a span {
+        #main-header .links li a span {
           color: rgba(255, 255, 255, 0.66);
           text-decoration: none; }
 
@@ -5860,10 +5862,16 @@ h1 {
 h3 {
   color: #676363;
   font-family: 'Droid Serif', serif;
-  margin-bottom: 25px; }
-  @media (max-width: 767px) {
-    h3 {
-      text-align: center; } }
+  margin-bottom: 0px; }
+
+pre {
+  display: inline-block;
+  padding: 3px;
+  margin: 0px 0px 0px 5px;
+  color: #E27057;
+  background-color: #f5f5f5;
+  border: 1px solid rgba(204, 204, 204, 0);
+  vertical-align: middle; }
 
 hr {
   display: block;
@@ -5872,13 +5880,37 @@ hr {
   border-bottom: 1px solid #dad9d1;
   background: #EAE9E3; }
 
+.col-lg-color {
+  color: rgba(18, 106, 214, 0.63); }
+
+.col-md-color {
+  color: rgba(35, 143, 118, 0.86); }
+
+.col-sm-color {
+  color: rgba(255, 154, 69, 0.77); }
+
+.col-xs-color {
+  bcolor: rgba(148, 49, 40, 0.61); }
+
+.description {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #676363;
+  font-size: 18px; }
+
 .gizra-logo {
   font-size: 20px;
   text-transform: lowercase;
   font-family: Abril Fatface;
   color: #e27058; }
 
-.wrapper .box div {
+@media (max-width: 767px) {
+  #custom-layout header,
+  #default-bootstrap header {
+    text-align: center; } }
+
+#custom-layout .box div,
+#default-bootstrap .box div {
   margin-bottom: 25px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -5886,19 +5918,31 @@ hr {
   border-radius: 5px;
   background-clip: padding-box;
   color: white;
-  -webkit-transition: background-color 0.7s ease;
-  transition: background-color 0.7s ease;
   font-weight: bold;
   box-shadow: 0px 6px 7px -3px rgba(0, 0, 0, 0.06); }
-  @media (min-width: 1200px) {
-    .wrapper .box div {
-      background-color: rgba(18, 106, 214, 0.63); } }
-  @media (min-width: 992px) and (max-width: 1199px) {
-    .wrapper .box div {
-      background-color: rgba(35, 143, 118, 0.86); } }
-  @media (min-width: 768px) and (max-width: 991px) {
-    .wrapper .box div {
+
+#custom-layout .box div {
+  -webkit-transition: background-color 0.7s ease;
+  transition: background-color 0.7s ease; }
+  @media (min-width: 768px) {
+    #custom-layout .box div {
       background-color: rgba(255, 154, 69, 0.77); } }
   @media (max-width: 767px) {
-    .wrapper .box div {
+    #custom-layout .box div {
+      background-color: rgba(148, 49, 40, 0.61); } }
+
+#default-bootstrap .box div {
+  -webkit-transition: background-color 0.7s ease;
+  transition: background-color 0.7s ease; }
+  @media (min-width: 1200px) {
+    #default-bootstrap .box div {
+      background-color: rgba(18, 106, 214, 0.63); } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    #default-bootstrap .box div {
+      background-color: rgba(35, 143, 118, 0.86); } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    #default-bootstrap .box div {
+      background-color: rgba(255, 154, 69, 0.77); } }
+  @media (max-width: 767px) {
+    #default-bootstrap .box div {
       background-color: rgba(148, 49, 40, 0.61); } }

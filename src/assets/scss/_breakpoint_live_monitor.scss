@@ -2,5 +2,5 @@
   color: white;
   padding: 3px;
   background: red;
-  @include responsive;
+  @include responsive-default-bootstrap;
 }

@@ -24,3 +24,16 @@ $container-md:  $custom-desktop-width;
     @content;
   }
 }
+
+/* Color change mixin by "custom-layout" layout */
+@mixin responsive-custom-layout {
+  @include transition(background-color 0.7s ease);
+
+  @include desktop {
+    background-color: $col-sm;
+  }
+
+  @include mobile {
+    background-color: $col-xs;
+  }
+}

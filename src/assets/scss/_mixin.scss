@@ -3,13 +3,13 @@ $white-smoke: rgba(0, 0, 0, 0.15);
 $gray-dark: #202020;
 $gizra: #e27058;
 $gizra-dark: #A95C4C;
-$title: #676363;
+$text: #676363;
 $header-bg: #2D2D38;
 $gray-light: rgba(255, 255, 255, 0.66);
-$pastel-red: rgba(148, 49, 40, 0.61);
-$pastel-orange: rgba(255, 154, 69, 0.77);
-$pastel-green: rgba(35, 143, 118, 0.86);
-$pastel-blue: rgba(18, 106, 214, 0.63);
+$col-xs: rgba(148, 49, 40, 0.61);
+$col-sm: rgba(255, 154, 69, 0.77);
+$col-md: rgba(35, 143, 118, 0.86);
+$col-lg: rgba(18, 106, 214, 0.63);
 
 /* Border radius */
 @mixin border-radius ($value: 3px) {
@@ -31,24 +31,23 @@ $pastel-blue: rgba(18, 106, 214, 0.63);
   transition: $args;
 }
 
-@mixin responsive {
-
+/* Color change mixin by "default-bootstrap" layout */
+@mixin responsive-default-bootstrap {
   @include transition(background-color 0.7s ease);
 
   @include col-lg {
-    background-color: $pastel-blue;
+    background-color: $col-lg;
   }
 
   @include col-md {
-    background-color: $pastel-green;
+    background-color: $col-md;
   }
 
   @include col-sm {
-    background-color: $pastel-orange;
+    background-color: $col-sm;
   }
 
   @include col-xs {
-    background-color: $pastel-red;
+    background-color: $col-xs;
   }
-
 }
