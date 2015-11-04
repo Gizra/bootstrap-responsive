@@ -5810,7 +5810,6 @@ button.close {
       background-color: rgba(148, 49, 40, 0.61); } }
 
 #main-header {
-  margin-bottom: 50px;
   padding-top: 20px;
   padding-bottom: 20px;
   color: white;
@@ -5889,10 +5888,10 @@ hr {
 iframe {
   position: absolute;
   width: 75%;
-  height: 654px;
+  height: 653px;
   left: 0px;
   right: 0px;
-  margin: 0 auto;
+  margin: 50px auto 20px auto;
   -webkit-transition: width 0.7s ease;
   transition: width 0.7s ease;
   display: block;
@@ -5900,6 +5899,10 @@ iframe {
   border-radius: 5px;
   background-clip: padding-box;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  iframe .xs {
+    width: 767px;
+    width: 991px;
+    width: 1199px; }
 
 .col-lg-color {
   color: rgba(18, 106, 214, 0.63); }

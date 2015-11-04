@@ -49,15 +49,22 @@ hr {
 iframe {
   position: absolute;
   width: 75%;
-  height: 654px;
+  height: 653px;
   left: 0px;
   right: 0px;
-  margin: 0 auto;
+  margin: 50px auto 20px auto;
   @include transition(width 0.7s ease);
   display: block;
   border: 1px solid rgba(45, 45, 56, 0.11);
   @include border-radius(5px);
   @include box-shadow(0 0 10px rgba(0,0,0,0.1));
+
+  .xs {
+    width: $screen-xs-max;
+    width: $screen-sm-max;
+    width: $screen-md-max;
+  }
+
 }
 
 .col-lg-color {
