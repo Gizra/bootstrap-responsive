@@ -38,6 +38,15 @@
         }
       }
 
+      &.device {
+        color: rgba(255, 255, 255, 0.64);
+
+        i {
+          color: inherit;
+          vertical-align: middle;
+        }
+      }
+
       &:not(:first-child):before {
         content: "|";
         padding-right: 7px;
