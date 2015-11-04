@@ -1,5 +1,5 @@
 .container{
-  &#default-bootstrap {
+  &.default-bootstrap {
     // col-sm.
     @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
       width: (720px + $grid-gutter-width);

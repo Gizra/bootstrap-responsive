@@ -6,7 +6,7 @@
 
 body {
   font-family: 'Fira Sans', arial, sans-serif;
-  background: rgba(187, 182, 162, 0.3);
+  background: $body-bg;
 }
 
 h1 {
@@ -46,6 +46,20 @@ hr {
   background: #EAE9E3;
 }
 
+iframe {
+  position: absolute;
+  width: 75%;
+  height: 654px;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  @include transition(width 0.7s ease);
+  display: block;
+  border: 1px solid rgba(45, 45, 56, 0.11);
+  @include border-radius(5px);
+  @include box-shadow(0 0 10px rgba(0,0,0,0.1));
+}
+
 .col-lg-color {
   color: $col-lg;
 }
@@ -69,8 +83,8 @@ hr {
   font-size: 18px;
 }
 
-#custom-layout,
-#default-bootstrap {
+.custom-layout,
+.default-bootstrap {
 
   header {
     @include mobile {
@@ -90,13 +104,13 @@ hr {
   }
 }
 
-#custom-layout {
+.custom-layout {
   .box div {
     @include responsive-custom-layout;
   }
 }
 
-#default-bootstrap {
+.default-bootstrap {
   .box div {
     @include responsive-default-bootstrap;
   }

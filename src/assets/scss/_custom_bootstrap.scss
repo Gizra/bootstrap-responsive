@@ -9,6 +9,8 @@ $container-sm:  $custom-desktop-width ;
 //** For `$screen-md-min` and up.
 $container-md:  $custom-desktop-width;
 
+$body-bg: rgb(236, 235, 229);
+
 @import "../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 
 /* Desktop */
