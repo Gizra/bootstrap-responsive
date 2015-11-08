@@ -33,7 +33,7 @@ $col-lg: rgba(18, 106, 214, 0.63);
 
 /* Color change mixin by "default-bootstrap" layout */
 @mixin responsive-default-bootstrap {
-  @include transition(background-color 0.7s ease);
+  @include transition(background-color 0.2s ease);
 
   @include col-lg {
     background-color: $col-lg;

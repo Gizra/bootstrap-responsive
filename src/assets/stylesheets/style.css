@@ -5794,8 +5794,8 @@ button.close {
   color: white;
   padding: 3px;
   background: red;
-  -webkit-transition: background-color 0.7s ease;
-  transition: background-color 0.7s ease; }
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease; }
   @media (min-width: 1200px) {
     #breakpoint-live-monitor {
       background-color: rgba(18, 106, 214, 0.63); } }
@@ -5892,20 +5892,24 @@ hr {
 
 iframe {
   position: absolute;
-  width: 100%;
+  max-width: 100%;
   height: 653px;
   left: 0px;
   right: 0px;
   margin: 50px auto 20px auto;
-  -webkit-transition: width 0.7s ease;
-  transition: width 0.7s ease;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
   display: block;
   border: 1px solid rgba(45, 45, 56, 0.11);
   border-radius: 5px;
   background-clip: padding-box;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
   iframe.xs {
-    width: 765px; }
+    width: 482px; }
+  iframe.sm {
+    width: 770px; }
+  iframe.md {
+    width: 994px; }
   iframe.lg {
     width: 1202px; }
 
@@ -5955,8 +5959,8 @@ iframe {
       background-color: rgba(148, 49, 40, 0.61); } }
 
 .default-bootstrap .box div {
-  -webkit-transition: background-color 0.7s ease;
-  transition: background-color 0.7s ease; }
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease; }
   @media (min-width: 1200px) {
     .default-bootstrap .box div {
       background-color: rgba(18, 106, 214, 0.63); } }

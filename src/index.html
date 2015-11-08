@@ -8,8 +8,19 @@ layout: default
         Simplify <i class="fa fa-twitter"></i> Bootstrap
       </h1>
       <div class="col-sm-4">
-        <ul class="links">
-          <li class="device" onclick="changeWidth('xs')"><i class="fa fa-mobile fa-3x"></i></li>
+        <ul class="links" id="main-navigation">
+          <li class="device" data-breakpoint="lg">
+            <i class="fa fa-desktop fa-4x"></i>
+          </li>
+          <li class="device" data-breakpoint="md">
+            <i class="fa fa-desktop fa-3x"></i>
+          </li>
+          <li class="device" data-breakpoint="sm">
+            <i class="fa fa-tablet fa-3x"></i>
+          </li>
+          <li class="device" data-breakpoint="xs">
+            <i class="fa fa-mobile fa-3x"></i>
+          </li>
           <li class="gizra-logo">
             <a class="gizra-logo" href="http://www.gizra.com/" target="_blank">gizra</a>
           </li>
@@ -23,9 +34,6 @@ layout: default
               <span class="fa fa-user" aria-hidden="true"></span> Yaron Miro
             </a>
           </li>
-        </ul>
-        <ul class="list-unstyled list-inline">
-
         </ul>
       </div>
     </div>
