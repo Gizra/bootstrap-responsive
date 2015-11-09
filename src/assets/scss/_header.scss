@@ -1,6 +1,6 @@
 #main-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   color: white;
   background-color: $header-bg;
 
@@ -13,9 +13,12 @@
     text-decoration: none;
   }
 
-  .links {
-    padding-left: 0px;
-    list-style: none;
+  #breakpoints-navigation,
+  #main-navigation {
+    margin-bottom: 0px;
+  }
+
+  #main-navigation {
 
     @include desktop {
       float: right;
@@ -29,7 +32,8 @@
     }
 
     li {
-      display: inline;
+      padding-left: 0px;
+      padding-right: 0px;
 
       &:hover {
 
@@ -62,6 +66,22 @@
           text-decoration: none;
         }
       }
+    }
+  }
+  
+  #breakpoints-navigation {
+    height: 42px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    li {
+      cursor: pointer;
+      height: 42px;
+      border-left: 1px solid rgba(255, 255, 255, 0.32);
+      border-right: 1px solid rgba(138, 255, 44, 0.32);
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 10px;
     }
   }
 

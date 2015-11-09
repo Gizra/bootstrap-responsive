@@ -5810,8 +5810,8 @@ button.close {
       background-color: rgba(148, 49, 40, 0.61); } }
 
 #main-header {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   color: white;
   background-color: #2D2D38; }
   #main-header h1 i {
@@ -5819,37 +5819,50 @@ button.close {
   #main-header a {
     color: white;
     text-decoration: none; }
-  #main-header .links {
+  #main-header #breakpoints-navigation,
+  #main-header #main-navigation {
+    margin-bottom: 0px; }
+  @media (min-width: 768px) {
+    #main-header #main-navigation {
+      float: right;
+      height: 36px;
+      line-height: 36px; } }
+  @media (max-width: 767px) {
+    #main-header #main-navigation {
+      float: none;
+      text-align: center; } }
+  #main-header #main-navigation li {
     padding-left: 0px;
-    list-style: none; }
-    @media (min-width: 768px) {
-      #main-header .links {
-        float: right;
-        height: 36px;
-        line-height: 36px; } }
-    @media (max-width: 767px) {
-      #main-header .links {
-        float: none;
-        text-align: center; } }
-    #main-header .links li {
-      display: inline; }
-      #main-header .links li:hover a {
-        color: inherit; }
-      #main-header .links li.device {
-        color: rgba(255, 255, 255, 0.64); }
-        #main-header .links li.device i {
-          color: inherit;
-          vertical-align: middle; }
-      #main-header .links li:not(:first-child):before {
-        content: "|";
-        padding-right: 7px;
-        padding-left: 7px;
-        color: rgba(255, 255, 255, 0.52); }
-      #main-header .links li a {
+    padding-right: 0px; }
+    #main-header #main-navigation li:hover a {
+      color: inherit; }
+    #main-header #main-navigation li.device {
+      color: rgba(255, 255, 255, 0.64); }
+      #main-header #main-navigation li.device i {
+        color: inherit;
+        vertical-align: middle; }
+    #main-header #main-navigation li:not(:first-child):before {
+      content: "|";
+      padding-right: 7px;
+      padding-left: 7px;
+      color: rgba(255, 255, 255, 0.52); }
+    #main-header #main-navigation li a {
+      text-decoration: none; }
+      #main-header #main-navigation li a span {
+        color: rgba(255, 255, 255, 0.66);
         text-decoration: none; }
-        #main-header .links li a span {
-          color: rgba(255, 255, 255, 0.66);
-          text-decoration: none; }
+  #main-header #breakpoints-navigation {
+    height: 42px;
+    padding-left: 0px;
+    padding-right: 0px; }
+    #main-header #breakpoints-navigation li {
+      cursor: pointer;
+      height: 42px;
+      border-left: 1px solid rgba(255, 255, 255, 0.32);
+      border-right: 1px solid rgba(138, 255, 44, 0.32);
+      padding-left: 0px;
+      padding-right: 0px;
+      padding-top: 10px; }
   #main-header .gizra-logo {
     font-size: 20px;
     text-transform: lowercase;

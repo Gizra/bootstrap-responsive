@@ -14,6 +14,6 @@ $(document).ready(function() {
   };
 
   // The on "click" handler.
-  $("#main-navigation li.device").on("click", changeBreakPoint);
+  $("#breakpoints-navigation li.device").on("click", changeBreakPoint);
 
 });
