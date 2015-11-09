@@ -5,6 +5,7 @@
   background-color: $header-bg;
 
   h1 i {
+    line-height: 65px;
     color: $gray-light;
   }
 
@@ -19,6 +20,7 @@
   }
 
   #main-navigation {
+    padding-top: 13px;
 
     @include desktop {
       float: right;
@@ -42,15 +44,6 @@
         }
       }
 
-      &.device {
-        color: rgba(255, 255, 255, 0.64);
-
-        i {
-          color: inherit;
-          vertical-align: middle;
-        }
-      }
-
       &:not(:first-child):before {
         content: "|";
         padding-right: 7px;
@@ -70,18 +63,44 @@
   }
   
   #breakpoints-navigation {
-    height: 42px;
+    height: 65px;
     padding-left: 0px;
     padding-right: 0px;
 
     li {
+      float: left;
+      display: block;
       cursor: pointer;
-      height: 42px;
-      border-left: 1px solid rgba(255, 255, 255, 0.32);
-      border-right: 1px solid rgba(138, 255, 44, 0.32);
+      height: 65px;
+      border-left: 1px solid rgba(255, 255, 255, 0.12);
       padding-left: 0px;
       padding-right: 0px;
-      padding-top: 10px;
+      padding-top: 21px;
+
+      &:last-child {
+        border-right: 1px solid rgba(255, 255, 255, 0.12);
+      }
+
+      &.active-lg {
+        color: $col-lg;
+      }
+
+      &.active-md {
+        color: $col-md;
+      }
+
+      &.active-sm {
+        color: $col-sm;
+      }
+
+      &.active-xs {
+        color: $col-xs;
+      }
+
+      i {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
   }
 

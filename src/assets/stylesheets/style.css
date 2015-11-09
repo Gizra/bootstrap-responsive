@@ -5793,21 +5793,20 @@ button.close {
 #breakpoint-live-monitor {
   color: white;
   padding: 3px;
-  background: red;
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease; }
   @media (min-width: 1200px) {
     #breakpoint-live-monitor {
-      background-color: rgba(18, 106, 214, 0.63); } }
+      background-color: #6395D2; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     #breakpoint-live-monitor {
-      background-color: rgba(35, 143, 118, 0.86); } }
+      background-color: #3F9C85; } }
   @media (min-width: 768px) and (max-width: 991px) {
     #breakpoint-live-monitor {
-      background-color: rgba(255, 154, 69, 0.77); } }
+      background-color: #fbad69; } }
   @media (max-width: 767px) {
     #breakpoint-live-monitor {
-      background-color: rgba(148, 49, 40, 0.61); } }
+      background-color: #B67971; } }
 
 #main-header {
   padding-top: 0px;
@@ -5815,6 +5814,7 @@ button.close {
   color: white;
   background-color: #2D2D38; }
   #main-header h1 i {
+    line-height: 65px;
     color: rgba(255, 255, 255, 0.66); }
   #main-header a {
     color: white;
@@ -5822,47 +5822,58 @@ button.close {
   #main-header #breakpoints-navigation,
   #main-header #main-navigation {
     margin-bottom: 0px; }
-  @media (min-width: 768px) {
-    #main-header #main-navigation {
-      float: right;
-      height: 36px;
-      line-height: 36px; } }
-  @media (max-width: 767px) {
-    #main-header #main-navigation {
-      float: none;
-      text-align: center; } }
-  #main-header #main-navigation li {
-    padding-left: 0px;
-    padding-right: 0px; }
-    #main-header #main-navigation li:hover a {
-      color: inherit; }
-    #main-header #main-navigation li.device {
-      color: rgba(255, 255, 255, 0.64); }
-      #main-header #main-navigation li.device i {
-        color: inherit;
-        vertical-align: middle; }
-    #main-header #main-navigation li:not(:first-child):before {
-      content: "|";
-      padding-right: 7px;
-      padding-left: 7px;
-      color: rgba(255, 255, 255, 0.52); }
-    #main-header #main-navigation li a {
-      text-decoration: none; }
-      #main-header #main-navigation li a span {
-        color: rgba(255, 255, 255, 0.66);
+  #main-header #main-navigation {
+    padding-top: 13px; }
+    @media (min-width: 768px) {
+      #main-header #main-navigation {
+        float: right;
+        height: 36px;
+        line-height: 36px; } }
+    @media (max-width: 767px) {
+      #main-header #main-navigation {
+        float: none;
+        text-align: center; } }
+    #main-header #main-navigation li {
+      padding-left: 0px;
+      padding-right: 0px; }
+      #main-header #main-navigation li:hover a {
+        color: inherit; }
+      #main-header #main-navigation li:not(:first-child):before {
+        content: "|";
+        padding-right: 7px;
+        padding-left: 7px;
+        color: rgba(255, 255, 255, 0.52); }
+      #main-header #main-navigation li a {
         text-decoration: none; }
+        #main-header #main-navigation li a span {
+          color: rgba(255, 255, 255, 0.66);
+          text-decoration: none; }
   #main-header #breakpoints-navigation {
-    height: 42px;
+    height: 65px;
     padding-left: 0px;
     padding-right: 0px; }
     #main-header #breakpoints-navigation li {
+      float: left;
+      display: block;
       cursor: pointer;
-      height: 42px;
-      border-left: 1px solid rgba(255, 255, 255, 0.32);
-      border-right: 1px solid rgba(138, 255, 44, 0.32);
+      height: 65px;
+      border-left: 1px solid rgba(255, 255, 255, 0.12);
       padding-left: 0px;
       padding-right: 0px;
-      padding-top: 10px; }
+      padding-top: 21px; }
+      #main-header #breakpoints-navigation li:last-child {
+        border-right: 1px solid rgba(255, 255, 255, 0.12); }
+      #main-header #breakpoints-navigation li.active-lg {
+        color: #6395D2; }
+      #main-header #breakpoints-navigation li.active-md {
+        color: #3F9C85; }
+      #main-header #breakpoints-navigation li.active-sm {
+        color: #fbad69; }
+      #main-header #breakpoints-navigation li.active-xs {
+        color: #B67971; }
+      #main-header #breakpoints-navigation li i {
+        padding-left: 10px;
+        padding-right: 10px; }
   #main-header .gizra-logo {
     font-size: 20px;
     text-transform: lowercase;
@@ -5927,16 +5938,16 @@ iframe {
     width: 1202px; }
 
 .col-lg-color {
-  color: rgba(18, 106, 214, 0.63); }
+  color: #6395D2; }
 
 .col-md-color {
-  color: rgba(35, 143, 118, 0.86); }
+  color: #3F9C85; }
 
 .col-sm-color {
-  color: rgba(255, 154, 69, 0.77); }
+  color: #fbad69; }
 
 .col-xs-color {
-  color: rgba(148, 49, 40, 0.61); }
+  color: #B67971; }
 
 .description {
   margin-top: 10px;
@@ -5966,23 +5977,23 @@ iframe {
   transition: background-color 0.7s ease; }
   @media (min-width: 768px) {
     .custom-layout .box div {
-      background-color: rgba(255, 154, 69, 0.77); } }
+      background-color: #fbad69; } }
   @media (max-width: 767px) {
     .custom-layout .box div {
-      background-color: rgba(148, 49, 40, 0.61); } }
+      background-color: #B67971; } }
 
 .default-bootstrap .box div {
   -webkit-transition: background-color 0.2s ease;
   transition: background-color 0.2s ease; }
   @media (min-width: 1200px) {
     .default-bootstrap .box div {
-      background-color: rgba(18, 106, 214, 0.63); } }
+      background-color: #6395D2; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     .default-bootstrap .box div {
-      background-color: rgba(35, 143, 118, 0.86); } }
+      background-color: #3F9C85; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .default-bootstrap .box div {
-      background-color: rgba(255, 154, 69, 0.77); } }
+      background-color: #fbad69; } }
   @media (max-width: 767px) {
     .default-bootstrap .box div {
-      background-color: rgba(148, 49, 40, 0.61); } }
+      background-color: #B67971; } }

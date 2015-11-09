@@ -6,10 +6,10 @@ $gizra-dark: #A95C4C;
 $text: #676363;
 $header-bg: #2D2D38;
 $gray-light: rgba(255, 255, 255, 0.66);
-$col-xs: rgba(148, 49, 40, 0.61);
-$col-sm: rgba(255, 154, 69, 0.77);
-$col-md: rgba(35, 143, 118, 0.86);
-$col-lg: rgba(18, 106, 214, 0.63);
+$col-xs: #B67971;
+$col-sm: #fbad69;
+$col-md: #3F9C85;
+$col-lg: #6395D2;
 
 /* Border radius */
 @mixin border-radius ($value: 3px) {
