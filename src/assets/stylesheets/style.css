@@ -5859,8 +5859,7 @@ button.close {
       height: 65px;
       border-left: 1px solid rgba(255, 255, 255, 0.12);
       padding-left: 0px;
-      padding-right: 0px;
-      padding-top: 21px; }
+      padding-right: 0px; }
       #main-header #breakpoints-navigation li:last-child {
         border-right: 1px solid rgba(255, 255, 255, 0.12); }
       #main-header #breakpoints-navigation li[data-breakpoint="lg"].active {
@@ -5871,9 +5870,16 @@ button.close {
         color: #fbad69; }
       #main-header #breakpoints-navigation li[data-breakpoint="xs"].active {
         color: #B67971; }
+      #main-header #breakpoints-navigation li i,
+      #main-header #breakpoints-navigation li span {
+        text-align: center;
+        display: block; }
+      #main-header #breakpoints-navigation li span {
+        margin-top: 5px;
+        font-size: 12px; }
       #main-header #breakpoints-navigation li i {
-        padding-left: 10px;
-        padding-right: 10px; }
+        margin-top: 11px;
+        padding: 0px 15px; }
   #main-header .gizra-logo {
     font-size: 20px;
     text-transform: lowercase;
