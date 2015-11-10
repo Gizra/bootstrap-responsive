@@ -26,7 +26,8 @@ $height: 65px;
     border-left: 1px solid rgba(255, 255, 255, 0.12);
 
     li {
-      display: inline-block;
+      float: left;
+      display: block;
       cursor: pointer;
       height: $height;
       border-right: 1px solid rgba(255, 255, 255, 0.12);
@@ -100,12 +101,12 @@ $height: 65px;
 
       span {
         margin-top: 5px;
+        padding: 0px 15px;
         font-size: 12px;
       }
 
       i {
         margin-top: 11px;
-        padding: 0px 15px;
       }
     }
   }

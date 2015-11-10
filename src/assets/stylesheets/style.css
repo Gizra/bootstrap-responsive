@@ -5829,7 +5829,8 @@ button.close {
     border-left: 1px solid rgba(255, 255, 255, 0.12); }
     #main-header #breakpoints-navigation li,
     #main-header #main-navigation li {
-      display: inline-block;
+      float: left;
+      display: block;
       cursor: pointer;
       height: 65px;
       border-right: 1px solid rgba(255, 255, 255, 0.12);
@@ -5871,10 +5872,10 @@ button.close {
     display: block; }
   #main-header #breakpoints-navigation li span {
     margin-top: 5px;
+    padding: 0px 15px;
     font-size: 12px; }
   #main-header #breakpoints-navigation li i {
-    margin-top: 11px;
-    padding: 0px 15px; }
+    margin-top: 11px; }
   #main-header .gizra-logo {
     font-size: 20px;
     text-transform: lowercase;
