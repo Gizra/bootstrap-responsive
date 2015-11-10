@@ -5851,6 +5851,7 @@ button.close {
   #main-header #main-navigation li:hover a {
     color: inherit; }
   #main-header #main-navigation li a {
+    padding: 0px 15px;
     text-decoration: none; }
     #main-header #main-navigation li a span {
       color: rgba(255, 255, 255, 0.66);
