@@ -81,19 +81,19 @@
         border-right: 1px solid rgba(255, 255, 255, 0.12);
       }
 
-      &.active-lg {
+      &[data-breakpoint="lg"].active {
         color: $col-lg;
       }
 
-      &.active-md {
+      &[data-breakpoint="md"].active {
         color: $col-md;
       }
 
-      &.active-sm {
+      &[data-breakpoint="sm"].active {
         color: $col-sm;
       }
 
-      &.active-xs {
+      &[data-breakpoint="xs"].active {
         color: $col-xs;
       }
 

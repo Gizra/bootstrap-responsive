@@ -5863,13 +5863,13 @@ button.close {
       padding-top: 21px; }
       #main-header #breakpoints-navigation li:last-child {
         border-right: 1px solid rgba(255, 255, 255, 0.12); }
-      #main-header #breakpoints-navigation li.active-lg {
+      #main-header #breakpoints-navigation li[data-breakpoint="lg"].active {
         color: #6395D2; }
-      #main-header #breakpoints-navigation li.active-md {
+      #main-header #breakpoints-navigation li[data-breakpoint="md"].active {
         color: #3F9C85; }
-      #main-header #breakpoints-navigation li.active-sm {
+      #main-header #breakpoints-navigation li[data-breakpoint="sm"].active {
         color: #fbad69; }
-      #main-header #breakpoints-navigation li.active-xs {
+      #main-header #breakpoints-navigation li[data-breakpoint="xs"].active {
         color: #B67971; }
       #main-header #breakpoints-navigation li i {
         padding-left: 10px;
@@ -5916,7 +5916,6 @@ hr {
 
 iframe {
   position: absolute;
-  max-width: 100%;
   height: 653px;
   left: 0px;
   right: 0px;
