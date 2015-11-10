@@ -1,3 +1,5 @@
+$height: 65px;
+
 #main-header {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -5,7 +7,7 @@
   background-color: $header-bg;
 
   h1 i {
-    line-height: 65px;
+    line-height: $height;
     color: $gray-light;
   }
 
@@ -16,16 +18,32 @@
 
   #breakpoints-navigation,
   #main-navigation {
-    margin-bottom: 0px;
+    height: $height;
+    margin: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
+
+    li {
+      display: inline-block;
+      cursor: pointer;
+      height: $height;
+      border-right: 1px solid rgba(255, 255, 255, 0.12);
+      padding-left: 0px;
+      padding-right: 0px;
+
+      &:last-child {
+        border-right: none;
+      }
+    }
   }
 
   #main-navigation {
-    padding-top: 13px;
-
     @include desktop {
       float: right;
-      height: 36px;
-      line-height: 36px;
+      line-height: $height;
+      border-left: none;
     }
 
     @include mobile {
@@ -34,21 +52,10 @@
     }
 
     li {
-      padding-left: 0px;
-      padding-right: 0px;
-
       &:hover {
-
         a {
           color: inherit;
         }
-      }
-
-      &:not(:first-child):before {
-        content: "|";
-        padding-right: 7px;
-        padding-left: 7px;
-        color: rgba(255, 255, 255, 0.52);
       }
 
       a {
@@ -63,22 +70,11 @@
   }
   
   #breakpoints-navigation {
-    height: 65px;
-    padding-left: 0px;
-    padding-right: 0px;
+    @include desktop {
+      float: right;
+    }
 
     li {
-      float: left;
-      display: block;
-      cursor: pointer;
-      height: 65px;
-      border-left: 1px solid rgba(255, 255, 255, 0.12);
-      padding-left: 0px;
-      padding-right: 0px;
-
-      &:last-child {
-        border-right: 1px solid rgba(255, 255, 255, 0.12);
-      }
 
       &[data-breakpoint="lg"].active {
         color: $col-lg;

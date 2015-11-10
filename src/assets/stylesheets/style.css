@@ -5821,65 +5821,60 @@ button.close {
     text-decoration: none; }
   #main-header #breakpoints-navigation,
   #main-header #main-navigation {
-    margin-bottom: 0px; }
-  #main-header #main-navigation {
-    padding-top: 13px; }
-    @media (min-width: 768px) {
-      #main-header #main-navigation {
-        float: right;
-        height: 36px;
-        line-height: 36px; } }
-    @media (max-width: 767px) {
-      #main-header #main-navigation {
-        float: none;
-        text-align: center; } }
-    #main-header #main-navigation li {
-      padding-left: 0px;
-      padding-right: 0px; }
-      #main-header #main-navigation li:hover a {
-        color: inherit; }
-      #main-header #main-navigation li:not(:first-child):before {
-        content: "|";
-        padding-right: 7px;
-        padding-left: 7px;
-        color: rgba(255, 255, 255, 0.52); }
-      #main-header #main-navigation li a {
-        text-decoration: none; }
-        #main-header #main-navigation li a span {
-          color: rgba(255, 255, 255, 0.66);
-          text-decoration: none; }
-  #main-header #breakpoints-navigation {
     height: 65px;
+    margin: 0px;
     padding-left: 0px;
-    padding-right: 0px; }
-    #main-header #breakpoints-navigation li {
-      float: left;
-      display: block;
+    padding-right: 0px;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    border-left: 1px solid rgba(255, 255, 255, 0.12); }
+    #main-header #breakpoints-navigation li,
+    #main-header #main-navigation li {
+      display: inline-block;
       cursor: pointer;
       height: 65px;
-      border-left: 1px solid rgba(255, 255, 255, 0.12);
+      border-right: 1px solid rgba(255, 255, 255, 0.12);
       padding-left: 0px;
       padding-right: 0px; }
-      #main-header #breakpoints-navigation li:last-child {
-        border-right: 1px solid rgba(255, 255, 255, 0.12); }
-      #main-header #breakpoints-navigation li[data-breakpoint="lg"].active {
-        color: #6395D2; }
-      #main-header #breakpoints-navigation li[data-breakpoint="md"].active {
-        color: #3F9C85; }
-      #main-header #breakpoints-navigation li[data-breakpoint="sm"].active {
-        color: #fbad69; }
-      #main-header #breakpoints-navigation li[data-breakpoint="xs"].active {
-        color: #B67971; }
-      #main-header #breakpoints-navigation li i,
-      #main-header #breakpoints-navigation li span {
-        text-align: center;
-        display: block; }
-      #main-header #breakpoints-navigation li span {
-        margin-top: 5px;
-        font-size: 12px; }
-      #main-header #breakpoints-navigation li i {
-        margin-top: 11px;
-        padding: 0px 15px; }
+      #main-header #breakpoints-navigation li:last-child,
+      #main-header #main-navigation li:last-child {
+        border-right: none; }
+  @media (min-width: 768px) {
+    #main-header #main-navigation {
+      float: right;
+      line-height: 65px;
+      border-left: none; } }
+  @media (max-width: 767px) {
+    #main-header #main-navigation {
+      float: none;
+      text-align: center; } }
+  #main-header #main-navigation li:hover a {
+    color: inherit; }
+  #main-header #main-navigation li a {
+    text-decoration: none; }
+    #main-header #main-navigation li a span {
+      color: rgba(255, 255, 255, 0.66);
+      text-decoration: none; }
+  @media (min-width: 768px) {
+    #main-header #breakpoints-navigation {
+      float: right; } }
+  #main-header #breakpoints-navigation li[data-breakpoint="lg"].active {
+    color: #6395D2; }
+  #main-header #breakpoints-navigation li[data-breakpoint="md"].active {
+    color: #3F9C85; }
+  #main-header #breakpoints-navigation li[data-breakpoint="sm"].active {
+    color: #fbad69; }
+  #main-header #breakpoints-navigation li[data-breakpoint="xs"].active {
+    color: #B67971; }
+  #main-header #breakpoints-navigation li i,
+  #main-header #breakpoints-navigation li span {
+    text-align: center;
+    display: block; }
+  #main-header #breakpoints-navigation li span {
+    margin-top: 5px;
+    font-size: 12px; }
+  #main-header #breakpoints-navigation li i {
+    margin-top: 11px;
+    padding: 0px 15px; }
   #main-header .gizra-logo {
     font-size: 20px;
     text-transform: lowercase;
