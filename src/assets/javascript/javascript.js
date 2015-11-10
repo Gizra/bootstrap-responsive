@@ -1,35 +1,5 @@
 $(document).ready(function() {
 
-  // The last window "width" value.
-  var prevW = $(window).width();
-
-
-  function clearClass(className) {
-    // Strip the "active" class.
-    $('#breakpoints-navigation li.device').each(function() {
-      $(this).removeClass(className);
-    });
-  }
-
-  /**
-   * Clear the "iframe" breakpoint class (e.g "xs") and the "active" class from
-   * the icon that's responsible to display the current breakpoint.
-   */
-  $(window).resize(function() {
-
-    // In case we change the height only.
-    if ($(window).width() == prevW) {
-      return;
-    }
-
-    // Update the new window "width" value.
-    prevW = $(window).width();
-
-    // Strip class from the breakpoints icons.
-    clearClass('active');
-
-  });
-
   /**
    * Change the width of the "iframe" to match a breakpoint range.
    */
@@ -37,8 +7,10 @@ $(document).ready(function() {
 
     var self = this;
 
-    // Strip class from the breakpoints icons.
-    clearClass('active');
+    // Strip class "active" from the breakpoints icons.
+    $('#breakpoints-navigation li.breakpoint-icon').each(function() {
+      $(this).removeClass('active');
+    });
 
     $(self).addClass('active');
 
@@ -48,6 +20,8 @@ $(document).ready(function() {
     $iframe.addClass($(self).data("breakpoint"));
   };
 
-  // The on "click" handler.
-  $("#breakpoints-navigation li.device").on("click", changeBreakPoint);
+  /**
+   * On "click" handler for the "breakpoint-icon".
+   */
+  $("#breakpoints-navigation li.breakpoint-icon").on("click", changeBreakPoint);
 });
