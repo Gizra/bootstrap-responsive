@@ -5887,9 +5887,11 @@ button.close {
     font-family: Abril Fatface;
     color: #e27058; }
 
-body {
-  font-family: 'Fira Sans', arial, sans-serif;
+html {
   background: #ecebe5; }
+
+body {
+  font-family: 'Fira Sans', arial, sans-serif; }
 
 h1 {
   margin: 0px;
@@ -5904,6 +5906,17 @@ h3 {
   color: #676363;
   font-family: 'Droid Serif', serif;
   margin-bottom: 0px; }
+
+h4 {
+  margin: 25px 0 0 0;
+  padding: 10px;
+  font-size: 15px;
+  color: #676363;
+  background: rgba(255, 255, 255, 0.39);
+  display: inline-block;
+  border: 1px solid rgba(103, 99, 99, 0.29);
+  border-radius: 5px;
+  background-clip: padding-box; }
 
 pre {
   display: inline-block;
@@ -5925,10 +5938,10 @@ hr {
 
 iframe {
   position: absolute;
-  min-height: 663px;
+  min-height: 640px;
   left: 0px;
   right: 0px;
-  margin: 50px auto 20px auto;
+  margin: 25px auto 20px auto;
   -webkit-transition: width 0.5s ease;
   transition: width 0.5s ease;
   display: block;

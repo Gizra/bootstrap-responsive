@@ -5,9 +5,12 @@
 @import "header";
 @import "footer";
 
+html {
+  background: $body-bg;
+}
+
 body {
   font-family: 'Fira Sans', arial, sans-serif;
-  background: $body-bg;
 }
 
 h1 {
@@ -27,6 +30,17 @@ h3 {
   color: $text;
   font-family: 'Droid Serif', serif;
   margin-bottom: 0px;
+}
+
+h4 {
+  margin: 25px 0 0 0;
+  padding: 10px;
+  font-size: 15px;
+  color: $text;
+  background: rgba(255, 255, 255, 0.39);
+  display: inline-block;
+  border: 1px solid rgba(103, 99, 99, 0.29);
+  @include border-radius(5px);
 }
 
 pre {
@@ -53,10 +67,10 @@ hr {
 
 iframe {
   position: absolute;
-  min-height: 663px;
+  min-height: 640px;
   left: 0px;
   right: 0px;
-  margin: 50px auto 20px auto;
+  margin: 25px auto 20px auto;
   @include transition(width 0.5s ease);
   display: block;
   border: 1px solid rgba(45, 45, 56, 0.11);
