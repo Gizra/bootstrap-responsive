@@ -3,6 +3,7 @@
 @import "default_bootstrap";
 @import "breakpoint_live_monitor";
 @import "header";
+@import "footer";
 
 body {
   font-family: 'Fira Sans', arial, sans-serif;
@@ -44,11 +45,15 @@ hr {
   height: 1px;
   border-bottom: 1px solid rgb(218, 217, 209);
   background: #EAE9E3;
+
+  &.no-margin {
+    margin: 0px;
+  }
 }
 
 iframe {
   position: absolute;
-  height: 653px;
+  min-height: 663px;
   left: 0px;
   right: 0px;
   margin: 50px auto 20px auto;

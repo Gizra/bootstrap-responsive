@@ -16,14 +16,19 @@ $height: 65px;
     text-decoration: none;
   }
 
-  #breakpoints-navigation,
-  #main-navigation {
+
+  #breakpoints-navigation {
+
     height: $height;
     margin: 0px;
     padding-left: 0px;
     padding-right: 0px;
     border-right: 1px solid rgba(255, 255, 255, 0.12);
     border-left: 1px solid rgba(255, 255, 255, 0.12);
+
+    @include desktop {
+      float: right;
+    }
 
     li {
       float: left;
@@ -33,64 +38,29 @@ $height: 65px;
       border-right: 1px solid rgba(255, 255, 255, 0.12);
       padding-left: 0px;
       padding-right: 0px;
+      @include transition(color 0.35s ease);
 
       &:last-child {
         border-right: none;
       }
-    }
-  }
 
-  #main-navigation {
-    @include desktop {
-      float: right;
-      line-height: $height;
-      border-left: none;
-    }
-
-    @include mobile {
-      float: none;
-      text-align: center;
-    }
-
-    li {
-      &:hover {
-        a {
-          color: inherit;
-        }
-      }
-
-      a {
-        padding: 0px 15px;
-        text-decoration: none;
-
-        span {
-          color: $gray-light;
-          text-decoration: none;
-        }
-      }
-    }
-  }
-  
-  #breakpoints-navigation {
-    @include desktop {
-      float: right;
-    }
-
-    li {
-
-      &[data-breakpoint="lg"].active {
+      &[data-breakpoint="lg"].active,
+      &[data-breakpoint="lg"]:hover {
         color: $col-lg;
       }
 
-      &[data-breakpoint="md"].active {
+      &[data-breakpoint="md"].active,
+      &[data-breakpoint="md"]:hover {
         color: $col-md;
       }
 
-      &[data-breakpoint="sm"].active {
+      &[data-breakpoint="sm"].active,
+      &[data-breakpoint="sm"]:hover {
         color: $col-sm;
       }
 
-      &[data-breakpoint="xs"].active {
+      &[data-breakpoint="xs"].active,
+      &[data-breakpoint="xs"]:hover {
         color: $col-xs;
       }
 
