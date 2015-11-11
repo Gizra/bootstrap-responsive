@@ -5866,11 +5866,6 @@ button.close {
         font-size: 12px; }
       #main-header .icons #breakpoints-navigation li i {
         margin-top: 11px; }
-  #main-header .gizra-logo {
-    font-size: 20px;
-    text-transform: lowercase;
-    font-family: Abril Fatface;
-    color: #e27058; }
 
 #main-footer {
   color: #676363; }
@@ -5891,8 +5886,7 @@ button.close {
   #main-footer .gizra-logo {
     font-size: 20px;
     text-transform: lowercase;
-    font-family: Abril Fatface;
-    color: #e27058; }
+    font-family: Abril Fatface; }
 
 html {
   background: #ecebe5; }
