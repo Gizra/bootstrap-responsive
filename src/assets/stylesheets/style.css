@@ -1059,7 +1059,7 @@ body {
   font-size: 14px;
   line-height: 1.42857;
   color: #202020;
-  background-color: #fff; }
+  background-color: #ecebe5; }
 
 input,
 button,
@@ -1097,7 +1097,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857;
-  background-color: #fff;
+  background-color: #ecebe5;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -2057,7 +2057,7 @@ th {
   .table > tbody + tbody {
     border-top: 2px solid #ddd; }
   .table .table {
-    background-color: #fff; }
+    background-color: #ecebe5; }
 
 .table-condensed > thead > tr > th,
 .table-condensed > thead > tr > td,
@@ -3580,7 +3580,7 @@ tbody.collapse.in {
         border-color: #eeeeee #eeeeee #ddd; }
     .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
       color: #555555;
-      background-color: #fff;
+      background-color: #ecebe5;
       border: 1px solid #ddd;
       border-bottom-color: transparent;
       cursor: default; }
@@ -3634,7 +3634,7 @@ tbody.collapse.in {
     .nav-tabs-justified > .active > a, .nav-tabs.nav-justified > .active > a,
     .nav-tabs-justified > .active > a:hover, .nav-tabs.nav-justified > .active > a:hover,
     .nav-tabs-justified > .active > a:focus, .nav-tabs.nav-justified > .active > a:focus {
-      border-bottom-color: #fff; } }
+      border-bottom-color: #ecebe5; } }
 
 .tab-content > .tab-pane {
   display: none; }
@@ -4311,7 +4311,7 @@ a.badge:hover, a.badge:focus {
   padding: 4px;
   margin-bottom: 20px;
   line-height: 1.42857;
-  background-color: #fff;
+  background-color: #ecebe5;
   border: 1px solid #ddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
@@ -5779,11 +5779,11 @@ button.close {
 /* Mobile */
 /* Color change mixin by "custom-layout" layout */
 @media (min-width: 768px) and (max-width: 991px) {
-  .container#default-bootstrap {
+  .container.default-bootstrap {
     width: 750px; } }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  .container#default-bootstrap {
+  .container.default-bootstrap {
     width: 970px; } }
 
 /* col-xs. */
@@ -5793,60 +5793,95 @@ button.close {
 #breakpoint-live-monitor {
   color: white;
   padding: 3px;
-  background: red;
-  -webkit-transition: background-color 0.7s ease;
-  transition: background-color 0.7s ease; }
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease; }
   @media (min-width: 1200px) {
     #breakpoint-live-monitor {
-      background-color: rgba(18, 106, 214, 0.63); } }
+      background-color: #6395D2; } }
   @media (min-width: 992px) and (max-width: 1199px) {
     #breakpoint-live-monitor {
-      background-color: rgba(35, 143, 118, 0.86); } }
+      background-color: #3F9C85; } }
   @media (min-width: 768px) and (max-width: 991px) {
     #breakpoint-live-monitor {
-      background-color: rgba(255, 154, 69, 0.77); } }
+      background-color: #fbad69; } }
   @media (max-width: 767px) {
     #breakpoint-live-monitor {
-      background-color: rgba(148, 49, 40, 0.61); } }
+      background-color: #B67971; } }
 
 #main-header {
-  margin-bottom: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   color: white;
   background-color: #2D2D38; }
   #main-header h1 i {
+    line-height: 65px;
     color: rgba(255, 255, 255, 0.66); }
   #main-header a {
     color: white;
     text-decoration: none; }
-  #main-header .links {
+  #main-header #breakpoints-navigation {
+    height: 65px;
+    margin: 0px;
     padding-left: 0px;
-    list-style: none; }
+    padding-right: 0px;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    border-left: 1px solid rgba(255, 255, 255, 0.12); }
     @media (min-width: 768px) {
-      #main-header .links {
-        float: right;
-        height: 36px;
-        line-height: 36px; } }
-    @media (max-width: 767px) {
-      #main-header .links {
-        float: none;
-        text-align: center; } }
-    #main-header .links li {
-      display: inline; }
-      #main-header .links li:hover a {
-        color: inherit; }
-      #main-header .links li:not(:first-child):before {
-        content: "|";
-        padding-right: 7px;
-        padding-left: 7px;
-        color: rgba(255, 255, 255, 0.52); }
-      #main-header .links li a {
-        text-decoration: none; }
-        #main-header .links li a span {
-          color: rgba(255, 255, 255, 0.66);
-          text-decoration: none; }
+      #main-header #breakpoints-navigation {
+        float: right; } }
+    #main-header #breakpoints-navigation li {
+      float: left;
+      display: block;
+      cursor: pointer;
+      height: 65px;
+      border-right: 1px solid rgba(255, 255, 255, 0.12);
+      padding-left: 0px;
+      padding-right: 0px;
+      -webkit-transition: color 0.35s ease;
+      transition: color 0.35s ease; }
+      #main-header #breakpoints-navigation li:last-child {
+        border-right: none; }
+      #main-header #breakpoints-navigation li[data-breakpoint="lg"].active, #main-header #breakpoints-navigation li[data-breakpoint="lg"]:hover {
+        color: #6395D2; }
+      #main-header #breakpoints-navigation li[data-breakpoint="md"].active, #main-header #breakpoints-navigation li[data-breakpoint="md"]:hover {
+        color: #3F9C85; }
+      #main-header #breakpoints-navigation li[data-breakpoint="sm"].active, #main-header #breakpoints-navigation li[data-breakpoint="sm"]:hover {
+        color: #fbad69; }
+      #main-header #breakpoints-navigation li[data-breakpoint="xs"].active, #main-header #breakpoints-navigation li[data-breakpoint="xs"]:hover {
+        color: #B67971; }
+      #main-header #breakpoints-navigation li i,
+      #main-header #breakpoints-navigation li span {
+        text-align: center;
+        display: block; }
+      #main-header #breakpoints-navigation li span {
+        margin-top: 5px;
+        padding: 0px 15px;
+        font-size: 12px; }
+      #main-header #breakpoints-navigation li i {
+        margin-top: 11px; }
   #main-header .gizra-logo {
+    font-size: 20px;
+    text-transform: lowercase;
+    font-family: Abril Fatface;
+    color: #e27058; }
+
+#main-footer {
+  color: #676363; }
+  #main-footer ul {
+    text-align: center;
+    margin: 2px 0px 0px 0px; }
+    #main-footer ul li {
+      display: inline; }
+      #main-footer ul li:hover a {
+        color: inherit; }
+      #main-footer ul li:not(:first-child):before {
+        content: "|";
+        color: #676363; }
+      #main-footer ul li a {
+        color: inherit;
+        padding: 0px 4px;
+        text-decoration: none; }
+  #main-footer .gizra-logo {
     font-size: 20px;
     text-transform: lowercase;
     font-family: Abril Fatface;
@@ -5854,7 +5889,7 @@ button.close {
 
 body {
   font-family: 'Fira Sans', arial, sans-serif;
-  background: rgba(187, 182, 162, 0.3); }
+  background: #ecebe5; }
 
 h1 {
   margin: 0px;
@@ -5885,18 +5920,42 @@ hr {
   height: 1px;
   border-bottom: 1px solid #dad9d1;
   background: #EAE9E3; }
+  hr.no-margin {
+    margin: 0px; }
+
+iframe {
+  position: absolute;
+  min-height: 663px;
+  left: 0px;
+  right: 0px;
+  margin: 50px auto 20px auto;
+  -webkit-transition: width 0.5s ease;
+  transition: width 0.5s ease;
+  display: block;
+  border: 1px solid rgba(45, 45, 56, 0.11);
+  border-radius: 5px;
+  background-clip: padding-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  iframe.xs {
+    width: 482px; }
+  iframe.sm {
+    width: 770px; }
+  iframe.md {
+    width: 994px; }
+  iframe.lg {
+    width: 1202px; }
 
 .col-lg-color {
-  color: rgba(18, 106, 214, 0.63); }
+  color: #6395D2; }
 
 .col-md-color {
-  color: rgba(35, 143, 118, 0.86); }
+  color: #3F9C85; }
 
 .col-sm-color {
-  color: rgba(255, 154, 69, 0.77); }
+  color: #fbad69; }
 
 .col-xs-color {
-  color: rgba(148, 49, 40, 0.61); }
+  color: #B67971; }
 
 .description {
   margin-top: 10px;
@@ -5905,12 +5964,12 @@ hr {
   font-size: 18px; }
 
 @media (max-width: 767px) {
-  #custom-layout header,
-  #default-bootstrap header {
+  .custom-layout header,
+  .default-bootstrap header {
     text-align: center; } }
 
-#custom-layout .box div,
-#default-bootstrap .box div {
+.custom-layout .box div,
+.default-bootstrap .box div {
   margin-bottom: 25px;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -5921,28 +5980,28 @@ hr {
   font-weight: bold;
   box-shadow: 0px 6px 7px -3px rgba(0, 0, 0, 0.06); }
 
-#custom-layout .box div {
+.custom-layout .box div {
   -webkit-transition: background-color 0.7s ease;
   transition: background-color 0.7s ease; }
   @media (min-width: 768px) {
-    #custom-layout .box div {
-      background-color: rgba(255, 154, 69, 0.77); } }
+    .custom-layout .box div {
+      background-color: #fbad69; } }
   @media (max-width: 767px) {
-    #custom-layout .box div {
-      background-color: rgba(148, 49, 40, 0.61); } }
+    .custom-layout .box div {
+      background-color: #B67971; } }
 
-#default-bootstrap .box div {
-  -webkit-transition: background-color 0.7s ease;
-  transition: background-color 0.7s ease; }
+.default-bootstrap .box div {
+  -webkit-transition: background-color 0.2s ease;
+  transition: background-color 0.2s ease; }
   @media (min-width: 1200px) {
-    #default-bootstrap .box div {
-      background-color: rgba(18, 106, 214, 0.63); } }
+    .default-bootstrap .box div {
+      background-color: #6395D2; } }
   @media (min-width: 992px) and (max-width: 1199px) {
-    #default-bootstrap .box div {
-      background-color: rgba(35, 143, 118, 0.86); } }
+    .default-bootstrap .box div {
+      background-color: #3F9C85; } }
   @media (min-width: 768px) and (max-width: 991px) {
-    #default-bootstrap .box div {
-      background-color: rgba(255, 154, 69, 0.77); } }
+    .default-bootstrap .box div {
+      background-color: #fbad69; } }
   @media (max-width: 767px) {
-    #default-bootstrap .box div {
-      background-color: rgba(148, 49, 40, 0.61); } }
+    .default-bootstrap .box div {
+      background-color: #B67971; } }

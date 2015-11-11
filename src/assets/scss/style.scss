@@ -3,10 +3,11 @@
 @import "default_bootstrap";
 @import "breakpoint_live_monitor";
 @import "header";
+@import "footer";
 
 body {
   font-family: 'Fira Sans', arial, sans-serif;
-  background: rgba(187, 182, 162, 0.3);
+  background: $body-bg;
 }
 
 h1 {
@@ -44,6 +45,40 @@ hr {
   height: 1px;
   border-bottom: 1px solid rgb(218, 217, 209);
   background: #EAE9E3;
+
+  &.no-margin {
+    margin: 0px;
+  }
+}
+
+iframe {
+  position: absolute;
+  min-height: 663px;
+  left: 0px;
+  right: 0px;
+  margin: 50px auto 20px auto;
+  @include transition(width 0.5s ease);
+  display: block;
+  border: 1px solid rgba(45, 45, 56, 0.11);
+  @include border-radius(5px);
+  @include box-shadow(0 0 10px rgba(0,0,0,0.1));
+
+  &.xs {
+    width: ($screen-xs-min + 2);
+  }
+
+  &.sm {
+    width: ($screen-sm-min + 2);
+  }
+
+  &.md {
+    width: ($screen-md-min + 2);
+  }
+
+  &.lg {
+    width: ($screen-lg-min + 2);
+  }
+
 }
 
 .col-lg-color {
@@ -69,8 +104,8 @@ hr {
   font-size: 18px;
 }
 
-#custom-layout,
-#default-bootstrap {
+.custom-layout,
+.default-bootstrap {
 
   header {
     @include mobile {
@@ -90,13 +125,13 @@ hr {
   }
 }
 
-#custom-layout {
+.custom-layout {
   .box div {
     @include responsive-custom-layout;
   }
 }
 
-#default-bootstrap {
+.default-bootstrap {
   .box div {
     @include responsive-default-bootstrap;
   }

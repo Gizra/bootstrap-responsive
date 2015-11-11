@@ -73,9 +73,15 @@ gulp.task("fonts", function () {
 
 // Copy xml and txt files to the "site" directory
 gulp.task("copy", function () {
-  return gulp.src(["serve/*.txt", "serve/*.xml"])
+  return gulp.src(["serve/*.txt", "src/CNAME", "serve/*.xml"])
     .pipe(gulp.dest("site"))
     .pipe($.size({ title: "xml & txt" }))
+});
+
+gulp.task("cname", function () {
+  return gulp.src(["serve/CNAME"])
+    .pipe(gulp.dest("site"))
+    .pipe($.size({ title: "CNAME" }))
 });
 
 // Optimizes all the CSS, HTML and concats the JS etc
@@ -180,5 +186,5 @@ gulp.task("build", ["jekyll:prod", "styles"], function () {});
 // Builds your site with the "build" command and then runs all the optimizations on
 // it and outputs it to "./site"
 gulp.task("publish", ["build"], function () {
-  gulp.start("html", "copy", "images", "fonts");
+  gulp.start("html", "copy", "cname", "images", "fonts");
 });

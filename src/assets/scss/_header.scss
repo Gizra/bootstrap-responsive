@@ -1,11 +1,13 @@
+$height: 65px;
+
 #main-header {
-  margin-bottom: 50px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   color: white;
   background-color: $header-bg;
 
   h1 i {
+    line-height: $height;
     color: $gray-light;
   }
 
@@ -14,45 +16,68 @@
     text-decoration: none;
   }
 
-  .links {
+
+  #breakpoints-navigation {
+
+    height: $height;
+    margin: 0px;
     padding-left: 0px;
-    list-style: none;
+    padding-right: 0px;
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+    border-left: 1px solid rgba(255, 255, 255, 0.12);
 
     @include desktop {
       float: right;
-      height: 36px;
-      line-height: 36px;
-    }
-
-    @include mobile {
-      float: none;
-      text-align: center;
     }
 
     li {
-      display: inline;
+      float: left;
+      display: block;
+      cursor: pointer;
+      height: $height;
+      border-right: 1px solid rgba(255, 255, 255, 0.12);
+      padding-left: 0px;
+      padding-right: 0px;
+      @include transition(color 0.35s ease);
 
-      &:hover {
-
-        a {
-          color: inherit;
-        }
+      &:last-child {
+        border-right: none;
       }
 
-      &:not(:first-child):before {
-        content: "|";
-        padding-right: 7px;
-        padding-left: 7px;
-        color: rgba(255, 255, 255, 0.52);
+      &[data-breakpoint="lg"].active,
+      &[data-breakpoint="lg"]:hover {
+        color: $col-lg;
       }
 
-      a {
-        text-decoration: none;
+      &[data-breakpoint="md"].active,
+      &[data-breakpoint="md"]:hover {
+        color: $col-md;
+      }
 
-        span {
-          color: $gray-light;
-          text-decoration: none;
-        }
+      &[data-breakpoint="sm"].active,
+      &[data-breakpoint="sm"]:hover {
+        color: $col-sm;
+      }
+
+      &[data-breakpoint="xs"].active,
+      &[data-breakpoint="xs"]:hover {
+        color: $col-xs;
+      }
+
+      i,
+      span {
+        text-align: center;
+        display: block;
+      }
+
+      span {
+        margin-top: 5px;
+        padding: 0px 15px;
+        font-size: 12px;
+      }
+
+      i {
+        margin-top: 11px;
       }
     }
   }
