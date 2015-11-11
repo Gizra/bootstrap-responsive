@@ -16,68 +16,77 @@ $height: 65px;
     text-decoration: none;
   }
 
-
-  #breakpoints-navigation {
-
-    height: $height;
-    margin: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    border-right: 1px solid rgba(255, 255, 255, 0.12);
-    border-left: 1px solid rgba(255, 255, 255, 0.12);
-
-    @include desktop {
-      float: right;
+  .icons {
+    @include mobile {
+    text-align: center;
     }
 
-    li {
-      float: left;
-      display: block;
-      cursor: pointer;
+    #breakpoints-navigation {
       height: $height;
-      border-right: 1px solid rgba(255, 255, 255, 0.12);
+      margin: 0px;
       padding-left: 0px;
       padding-right: 0px;
-      @include transition(color 0.35s ease);
+      border-right: 1px solid rgba(255, 255, 255, 0.12);
+      border-left: 1px solid rgba(255, 255, 255, 0.12);
 
-      &:last-child {
-        border-right: none;
+      @include desktop {
+        float: right;
       }
 
-      &[data-breakpoint="lg"].active,
-      &[data-breakpoint="lg"]:hover {
-        color: $col-lg;
+      @include mobile {
+        display: inline-block;
+        border: 1px solid rgba(255, 255, 255, 0.12);
       }
 
-      &[data-breakpoint="md"].active,
-      &[data-breakpoint="md"]:hover {
-        color: $col-md;
-      }
-
-      &[data-breakpoint="sm"].active,
-      &[data-breakpoint="sm"]:hover {
-        color: $col-sm;
-      }
-
-      &[data-breakpoint="xs"].active,
-      &[data-breakpoint="xs"]:hover {
-        color: $col-xs;
-      }
-
-      i,
-      span {
-        text-align: center;
+      li {
+        float: left;
         display: block;
-      }
+        cursor: pointer;
+        height: $height;
+        border-right: 1px solid rgba(255, 255, 255, 0.12);
+        padding-left: 0px;
+        padding-right: 0px;
+        @include transition(color 0.35s ease);
 
-      span {
-        margin-top: 5px;
-        padding: 0px 15px;
-        font-size: 12px;
-      }
+        &:last-child {
+          border-right: none;
+        }
 
-      i {
-        margin-top: 11px;
+        &[data-breakpoint="lg"].active,
+        &[data-breakpoint="lg"]:hover {
+          color: $col-lg;
+        }
+
+        &[data-breakpoint="md"].active,
+        &[data-breakpoint="md"]:hover {
+          color: $col-md;
+        }
+
+        &[data-breakpoint="sm"].active,
+        &[data-breakpoint="sm"]:hover {
+          color: $col-sm;
+        }
+
+        &[data-breakpoint="xs"].active,
+        &[data-breakpoint="xs"]:hover {
+          color: $col-xs;
+        }
+
+        i,
+        span {
+          text-align: center;
+          display: block;
+        }
+
+        span {
+          margin-top: 5px;
+          padding: 0px 15px;
+          font-size: 12px;
+        }
+
+        i {
+          margin-top: 11px;
+        }
       }
     }
   }

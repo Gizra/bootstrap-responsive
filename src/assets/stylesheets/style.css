@@ -5819,7 +5819,10 @@ button.close {
   #main-header a {
     color: white;
     text-decoration: none; }
-  #main-header #breakpoints-navigation {
+  @media (max-width: 767px) {
+    #main-header .icons {
+      text-align: center; } }
+  #main-header .icons #breakpoints-navigation {
     height: 65px;
     margin: 0px;
     padding-left: 0px;
@@ -5827,9 +5830,13 @@ button.close {
     border-right: 1px solid rgba(255, 255, 255, 0.12);
     border-left: 1px solid rgba(255, 255, 255, 0.12); }
     @media (min-width: 768px) {
-      #main-header #breakpoints-navigation {
+      #main-header .icons #breakpoints-navigation {
         float: right; } }
-    #main-header #breakpoints-navigation li {
+    @media (max-width: 767px) {
+      #main-header .icons #breakpoints-navigation {
+        display: inline-block;
+        border: 1px solid rgba(255, 255, 255, 0.12); } }
+    #main-header .icons #breakpoints-navigation li {
       float: left;
       display: block;
       cursor: pointer;
@@ -5839,25 +5846,25 @@ button.close {
       padding-right: 0px;
       -webkit-transition: color 0.35s ease;
       transition: color 0.35s ease; }
-      #main-header #breakpoints-navigation li:last-child {
+      #main-header .icons #breakpoints-navigation li:last-child {
         border-right: none; }
-      #main-header #breakpoints-navigation li[data-breakpoint="lg"].active, #main-header #breakpoints-navigation li[data-breakpoint="lg"]:hover {
+      #main-header .icons #breakpoints-navigation li[data-breakpoint="lg"].active, #main-header .icons #breakpoints-navigation li[data-breakpoint="lg"]:hover {
         color: #6395D2; }
-      #main-header #breakpoints-navigation li[data-breakpoint="md"].active, #main-header #breakpoints-navigation li[data-breakpoint="md"]:hover {
+      #main-header .icons #breakpoints-navigation li[data-breakpoint="md"].active, #main-header .icons #breakpoints-navigation li[data-breakpoint="md"]:hover {
         color: #3F9C85; }
-      #main-header #breakpoints-navigation li[data-breakpoint="sm"].active, #main-header #breakpoints-navigation li[data-breakpoint="sm"]:hover {
+      #main-header .icons #breakpoints-navigation li[data-breakpoint="sm"].active, #main-header .icons #breakpoints-navigation li[data-breakpoint="sm"]:hover {
         color: #fbad69; }
-      #main-header #breakpoints-navigation li[data-breakpoint="xs"].active, #main-header #breakpoints-navigation li[data-breakpoint="xs"]:hover {
+      #main-header .icons #breakpoints-navigation li[data-breakpoint="xs"].active, #main-header .icons #breakpoints-navigation li[data-breakpoint="xs"]:hover {
         color: #B67971; }
-      #main-header #breakpoints-navigation li i,
-      #main-header #breakpoints-navigation li span {
+      #main-header .icons #breakpoints-navigation li i,
+      #main-header .icons #breakpoints-navigation li span {
         text-align: center;
         display: block; }
-      #main-header #breakpoints-navigation li span {
+      #main-header .icons #breakpoints-navigation li span {
         margin-top: 5px;
         padding: 0px 15px;
         font-size: 12px; }
-      #main-header #breakpoints-navigation li i {
+      #main-header .icons #breakpoints-navigation li i {
         margin-top: 11px; }
   #main-header .gizra-logo {
     font-size: 20px;
