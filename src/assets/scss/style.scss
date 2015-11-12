@@ -7,10 +7,13 @@
 
 html {
   background: $body-bg;
+  position: relative;
+  min-height: 100%;
 }
 
 body {
   font-family: 'Fira Sans', arial, sans-serif;
+  padding-bottom: 60px;
 }
 
 h1 {
@@ -66,10 +69,7 @@ hr {
 }
 
 iframe {
-  position: absolute;
-  min-height: 640px;
-  left: 0px;
-  right: 0px;
+  min-height: 598px;
   margin: 25px auto 20px auto;
   @include transition(width 0.5s ease);
   display: block;

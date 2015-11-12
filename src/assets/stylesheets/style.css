@@ -5868,7 +5868,14 @@ button.close {
         margin-top: 11px; }
 
 #main-footer {
-  color: #676363; }
+  color: #676363;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 10px;
+  padding-top: 6px;
+  border-top: 1px solid rgba(103, 99, 99, 0.13); }
   #main-footer ul {
     text-align: center;
     margin: 2px 0px 0px 0px; }
@@ -5889,10 +5896,13 @@ button.close {
     font-family: Abril Fatface; }
 
 html {
-  background: #ecebe5; }
+  background: #ecebe5;
+  position: relative;
+  min-height: 100%; }
 
 body {
-  font-family: 'Fira Sans', arial, sans-serif; }
+  font-family: 'Fira Sans', arial, sans-serif;
+  padding-bottom: 60px; }
 
 h1 {
   margin: 0px;
@@ -5938,10 +5948,7 @@ hr {
     margin: 0px; }
 
 iframe {
-  position: absolute;
-  min-height: 640px;
-  left: 0px;
-  right: 0px;
+  min-height: 598px;
   margin: 25px auto 20px auto;
   -webkit-transition: width 0.5s ease;
   transition: width 0.5s ease;
