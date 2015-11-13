@@ -5868,10 +5868,15 @@ button.close {
         margin-top: 11px; }
 
 #main-footer {
-  color: #676363; }
+  color: #676363;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 15px; }
   #main-footer ul {
     text-align: center;
-    margin: 2px 0px 0px 0px; }
+    margin: 10px 0px 0px 0px; }
     #main-footer ul li {
       display: inline; }
       #main-footer ul li:hover a {
@@ -5886,9 +5891,11 @@ button.close {
   #main-footer .gizra-logo {
     font-size: 20px;
     text-transform: lowercase;
-    font-family: Abril Fatface; }
+    font-family: Abril Fatface;
+    color: #e27058; }
 
 html {
+  min-height: 100%;
   background: #ecebe5; }
 
 body {
@@ -5939,9 +5946,10 @@ hr {
 
 iframe {
   position: absolute;
-  min-height: 640px;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  min-height: 620px;
   margin: 25px auto 20px auto;
   -webkit-transition: width 0.5s ease;
   transition: width 0.5s ease;
@@ -5950,8 +5958,20 @@ iframe {
   border-radius: 5px;
   background-clip: padding-box;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+  @media (min-width: 1200px) {
+    iframe {
+      width: 1200px; } }
+  @media (min-width: 992px) and (max-width: 1199px) {
+    iframe {
+      width: 994px; } }
+  @media (min-width: 768px) and (max-width: 991px) {
+    iframe {
+      width: 768px; } }
+  @media (max-width: 767px) {
+    iframe {
+      width: 480px; } }
   iframe.xs {
-    width: 482px; }
+    width: 480px; }
   iframe.sm {
     width: 770px; }
   iframe.md {

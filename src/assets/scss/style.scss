@@ -6,6 +6,7 @@
 @import "footer";
 
 html {
+  min-height: 100%;
   background: $body-bg;
 }
 
@@ -67,9 +68,10 @@ hr {
 
 iframe {
   position: absolute;
-  min-height: 640px;
-  left: 0px;
-  right: 0px;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  min-height: 620px;
   margin: 25px auto 20px auto;
   @include transition(width 0.5s ease);
   display: block;
@@ -77,8 +79,24 @@ iframe {
   @include border-radius(5px);
   @include box-shadow(0 0 10px rgba(0,0,0,0.1));
 
+  @include col-lg {
+   width: $screen-lg-min;
+  }
+
+  @include col-md {
+    width: ($screen-md-min + 2);
+  }
+
+  @include col-sm {
+    width: $screen-sm-min;
+  }
+
+  @include col-xs {
+    width: $screen-xs-min;
+  }
+
   &.xs {
-    width: ($screen-xs-min + 2);
+    width: ($screen-xs-min);
   }
 
   &.sm {
