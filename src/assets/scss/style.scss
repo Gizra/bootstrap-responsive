@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-  margin: 0px;
+  margin:0;
   font-size: 32px;
 
   i {
@@ -32,24 +32,13 @@ h1 {
 h3 {
   color: $text;
   font-family: 'Droid Serif', serif;
-  margin-bottom: 0px;
-}
-
-h4 {
-  margin: 25px 0 0 0;
-  padding: 10px;
-  font-size: 15px;
-  color: $text;
-  background: rgba(255, 255, 255, 0.39);
-  display: inline-block;
-  border: 1px solid rgba(103, 99, 99, 0.29);
-  @include border-radius(5px);
+  margin-bottom:0;
 }
 
 pre {
   display: inline-block;
   padding: 3px;
-  margin: 0px 0px 0px 5px;
+  margin:0 0 0 5px;
   color: #E27057;
   background-color: #f5f5f5;
   border: 1px solid rgba(204, 204, 204, 0);
@@ -58,14 +47,25 @@ pre {
 
 hr {
   display: block;
-  margin: 11px 0px;
+  margin: 11px 0;
   height: 1px;
   border-bottom: 1px solid rgb(218, 217, 209);
   background: #EAE9E3;
 
   &.no-margin {
-    margin: 0px;
+    margin:0;
   }
+}
+
+.info {
+  display: inline-block;
+  margin: 25px 0 0 0;
+  padding: 10px;
+  border: 1px solid rgba(103, 99, 99, 0.29);
+  @include border-radius(5px);
+  color: $text;
+  background: rgba(255, 255, 255, 0.39);
+  font-size: 15px;
 }
 
 .content {
@@ -74,8 +74,8 @@ hr {
 }
 
 iframe {
-  margin: 0px auto;
-  min-height: 620px;
+  margin:0 auto;
+  min-height: 615px;
   margin: 25px auto 20px auto;
   @include transition(width 0.5s ease);
   display: block;
@@ -147,6 +147,10 @@ iframe {
 
 .custom-layout {
   .box div {
+    @include desktop {
+      margin-bottom: 0;
+    }
+
     @include responsive-custom-layout;
   }
 }

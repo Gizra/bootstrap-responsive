@@ -5810,8 +5810,8 @@ button.close {
 
 #main-header {
   min-width: 1200px;
-  padding-top: 0px;
-  padding-bottom: 0px;
+  padding-top: 0;
+  padding-bottom: 0;
   color: white;
   background-color: #2D2D38; }
   #main-header .content h1 i {
@@ -5822,9 +5822,9 @@ button.close {
     text-decoration: none; }
   #main-header .content #breakpoints-navigation {
     height: 65px;
-    margin: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
     border-right: 1px solid rgba(255, 255, 255, 0.12);
     border-left: 1px solid rgba(255, 255, 255, 0.12); }
     @media (min-width: 768px) {
@@ -5841,8 +5841,8 @@ button.close {
       cursor: pointer;
       height: 65px;
       border-right: 1px solid rgba(255, 255, 255, 0.12);
-      padding-left: 0px;
-      padding-right: 0px;
+      padding-left: 0;
+      padding-right: 0;
       -webkit-transition: color 0.35s ease;
       transition: color 0.35s ease; }
       #main-header .content #breakpoints-navigation li:last-child {
@@ -5861,7 +5861,7 @@ button.close {
         display: block; }
       #main-header .content #breakpoints-navigation li span {
         margin-top: 5px;
-        padding: 0px 15px;
+        padding: 0 15px;
         font-size: 12px; }
       #main-header .content #breakpoints-navigation li i {
         margin-top: 11px; }
@@ -5876,7 +5876,7 @@ button.close {
   color: #676363; }
   #main-footer .content ul {
     text-align: center;
-    margin: 3px 0px 0px 0px; }
+    margin: 3px 0 0 0; }
     #main-footer .content ul li {
       display: inline; }
       #main-footer .content ul li:hover a {
@@ -5886,7 +5886,7 @@ button.close {
         color: #676363; }
       #main-footer .content ul li a {
         color: inherit;
-        padding: 0px 4px;
+        padding: 0 4px;
         text-decoration: none; }
   #main-footer .content .gizra-logo {
     font-size: 20px;
@@ -5904,7 +5904,7 @@ body {
   font-family: 'Fira Sans', arial, sans-serif; }
 
 h1 {
-  margin: 0px;
+  margin: 0;
   font-size: 32px; }
   h1 i {
     color: white; }
@@ -5915,23 +5915,12 @@ h1 {
 h3 {
   color: #676363;
   font-family: 'Droid Serif', serif;
-  margin-bottom: 0px; }
-
-h4 {
-  margin: 25px 0 0 0;
-  padding: 10px;
-  font-size: 15px;
-  color: #676363;
-  background: rgba(255, 255, 255, 0.39);
-  display: inline-block;
-  border: 1px solid rgba(103, 99, 99, 0.29);
-  border-radius: 5px;
-  background-clip: padding-box; }
+  margin-bottom: 0; }
 
 pre {
   display: inline-block;
   padding: 3px;
-  margin: 0px 0px 0px 5px;
+  margin: 0 0 0 5px;
   color: #E27057;
   background-color: #f5f5f5;
   border: 1px solid rgba(204, 204, 204, 0);
@@ -5939,20 +5928,31 @@ pre {
 
 hr {
   display: block;
-  margin: 11px 0px;
+  margin: 11px 0;
   height: 1px;
   border-bottom: 1px solid #dad9d1;
   background: #EAE9E3; }
   hr.no-margin {
-    margin: 0px; }
+    margin: 0; }
+
+.info {
+  display: inline-block;
+  margin: 25px 0 0 0;
+  padding: 10px;
+  border: 1px solid rgba(103, 99, 99, 0.29);
+  border-radius: 5px;
+  background-clip: padding-box;
+  color: #676363;
+  background: rgba(255, 255, 255, 0.39);
+  font-size: 15px; }
 
 .content {
   margin: 0 auto;
   width: 1200px; }
 
 iframe {
-  margin: 0px auto;
-  min-height: 620px;
+  margin: 0 auto;
+  min-height: 615px;
   margin: 25px auto 20px auto;
   -webkit-transition: width 0.5s ease;
   transition: width 0.5s ease;
@@ -6008,6 +6008,9 @@ iframe {
 .custom-layout .box div {
   -webkit-transition: background-color 0.7s ease;
   transition: background-color 0.7s ease; }
+  @media (min-width: 768px) {
+    .custom-layout .box div {
+      margin-bottom: 0; } }
   @media (min-width: 768px) {
     .custom-layout .box div {
       background-color: #fbad69; } }
