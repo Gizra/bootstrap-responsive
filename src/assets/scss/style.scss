@@ -66,6 +66,11 @@ hr {
   }
 }
 
+.content {
+  margin: 0 auto;
+  width: $screen-lg-min;
+}
+
 iframe {
   position: absolute;
   left: 0;
@@ -78,22 +83,6 @@ iframe {
   border: 1px solid rgba(45, 45, 56, 0.11);
   @include border-radius(5px);
   @include box-shadow(0 0 10px rgba(0,0,0,0.1));
-
-  @include col-lg {
-   width: $screen-lg-min;
-  }
-
-  @include col-md {
-    width: ($screen-md-min + 2);
-  }
-
-  @include col-sm {
-    width: $screen-sm-min;
-  }
-
-  @include col-xs {
-    width: $screen-xs-min;
-  }
 
   &.xs {
     width: ($screen-xs-min);

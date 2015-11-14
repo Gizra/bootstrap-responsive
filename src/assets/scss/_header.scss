@@ -1,24 +1,22 @@
 $height: 65px;
 
 #main-header {
+  min-width: $screen-lg-min;
   padding-top: 0px;
   padding-bottom: 0px;
   color: white;
   background-color: $header-bg;
 
-  h1 i {
-    line-height: $height;
-    color: $gray-light;
-  }
+  .content {
 
-  a {
-    color: white;
-    text-decoration: none;
-  }
+    h1 i {
+      line-height: $height;
+      color: $gray-light;
+    }
 
-  .icons {
-    @include mobile {
-    text-align: center;
+    a {
+      color: white;
+      text-decoration: none;
     }
 
     #breakpoints-navigation {
@@ -34,6 +32,7 @@ $height: 65px;
       }
 
       @include mobile {
+        text-align: center;
         display: inline-block;
         border: 1px solid rgba(255, 255, 255, 0.12);
       }
