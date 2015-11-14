@@ -5809,103 +5809,102 @@ button.close {
       background-color: #B67971; } }
 
 #main-header {
-  padding-top: 0px;
-  padding-bottom: 0px;
+  min-width: 1200px;
+  padding-top: 0;
+  padding-bottom: 0;
   color: white;
   background-color: #2D2D38; }
-  #main-header h1 i {
+  #main-header .content h1 i {
     line-height: 65px;
     color: rgba(255, 255, 255, 0.66); }
-  #main-header a {
+  #main-header .content a {
     color: white;
     text-decoration: none; }
-  @media (max-width: 767px) {
-    #main-header .icons {
-      text-align: center; } }
-  #main-header .icons #breakpoints-navigation {
+  #main-header .content #breakpoints-navigation {
     height: 65px;
-    margin: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
     border-right: 1px solid rgba(255, 255, 255, 0.12);
     border-left: 1px solid rgba(255, 255, 255, 0.12); }
     @media (min-width: 768px) {
-      #main-header .icons #breakpoints-navigation {
+      #main-header .content #breakpoints-navigation {
         float: right; } }
     @media (max-width: 767px) {
-      #main-header .icons #breakpoints-navigation {
+      #main-header .content #breakpoints-navigation {
+        text-align: center;
         display: inline-block;
         border: 1px solid rgba(255, 255, 255, 0.12); } }
-    #main-header .icons #breakpoints-navigation li {
+    #main-header .content #breakpoints-navigation li {
       float: left;
       display: block;
       cursor: pointer;
       height: 65px;
       border-right: 1px solid rgba(255, 255, 255, 0.12);
-      padding-left: 0px;
-      padding-right: 0px;
+      padding-left: 0;
+      padding-right: 0;
       -webkit-transition: color 0.35s ease;
       transition: color 0.35s ease; }
-      #main-header .icons #breakpoints-navigation li:last-child {
+      #main-header .content #breakpoints-navigation li:last-child {
         border-right: none; }
-      #main-header .icons #breakpoints-navigation li[data-breakpoint="lg"].active, #main-header .icons #breakpoints-navigation li[data-breakpoint="lg"]:hover {
+      #main-header .content #breakpoints-navigation li[data-breakpoint="lg"].active, #main-header .content #breakpoints-navigation li[data-breakpoint="lg"]:hover {
         color: #6395D2; }
-      #main-header .icons #breakpoints-navigation li[data-breakpoint="md"].active, #main-header .icons #breakpoints-navigation li[data-breakpoint="md"]:hover {
+      #main-header .content #breakpoints-navigation li[data-breakpoint="md"].active, #main-header .content #breakpoints-navigation li[data-breakpoint="md"]:hover {
         color: #3F9C85; }
-      #main-header .icons #breakpoints-navigation li[data-breakpoint="sm"].active, #main-header .icons #breakpoints-navigation li[data-breakpoint="sm"]:hover {
+      #main-header .content #breakpoints-navigation li[data-breakpoint="sm"].active, #main-header .content #breakpoints-navigation li[data-breakpoint="sm"]:hover {
         color: #fbad69; }
-      #main-header .icons #breakpoints-navigation li[data-breakpoint="xs"].active, #main-header .icons #breakpoints-navigation li[data-breakpoint="xs"]:hover {
+      #main-header .content #breakpoints-navigation li[data-breakpoint="xs"].active, #main-header .content #breakpoints-navigation li[data-breakpoint="xs"]:hover {
         color: #B67971; }
-      #main-header .icons #breakpoints-navigation li i,
-      #main-header .icons #breakpoints-navigation li span {
+      #main-header .content #breakpoints-navigation li i,
+      #main-header .content #breakpoints-navigation li span {
         text-align: center;
         display: block; }
-      #main-header .icons #breakpoints-navigation li span {
+      #main-header .content #breakpoints-navigation li span {
         margin-top: 5px;
-        padding: 0px 15px;
+        padding: 0 15px;
         font-size: 12px; }
-      #main-header .icons #breakpoints-navigation li i {
+      #main-header .content #breakpoints-navigation li i {
         margin-top: 11px; }
 
 #main-footer {
-  color: #676363;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  padding-bottom: 10px;
-  padding-top: 6px;
-  border-top: 1px solid rgba(103, 99, 99, 0.13); }
-  #main-footer ul {
+  padding-bottom: 7px;
+  min-width: 1200px;
+  color: #676363; }
+  #main-footer .content ul {
     text-align: center;
-    margin: 2px 0px 0px 0px; }
-    #main-footer ul li {
+    margin: 3px 0 0 0; }
+    #main-footer .content ul li {
       display: inline; }
-      #main-footer ul li:hover a {
+      #main-footer .content ul li:hover a {
         color: inherit; }
-      #main-footer ul li:not(:first-child):before {
+      #main-footer .content ul li:not(:first-child):before {
         content: "|";
         color: #676363; }
-      #main-footer ul li a {
+      #main-footer .content ul li a {
         color: inherit;
-        padding: 0px 4px;
+        padding: 0 4px;
         text-decoration: none; }
-  #main-footer .gizra-logo {
+  #main-footer .content .gizra-logo {
     font-size: 20px;
     text-transform: lowercase;
-    font-family: Abril Fatface; }
+    font-family: Abril Fatface;
+    color: #e27058; }
 
 html {
-  background: #ecebe5;
   position: relative;
-  min-height: 100%; }
+  min-height: 100%;
+  background: #ecebe5; }
 
 body {
-  font-family: 'Fira Sans', arial, sans-serif;
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  font-family: 'Fira Sans', arial, sans-serif; }
 
 h1 {
-  margin: 0px;
+  margin: 0;
   font-size: 32px; }
   h1 i {
     color: white; }
@@ -5916,23 +5915,12 @@ h1 {
 h3 {
   color: #676363;
   font-family: 'Droid Serif', serif;
-  margin-bottom: 0px; }
-
-h4 {
-  margin: 25px 0 0 0;
-  padding: 10px;
-  font-size: 15px;
-  color: #676363;
-  background: rgba(255, 255, 255, 0.39);
-  display: inline-block;
-  border: 1px solid rgba(103, 99, 99, 0.29);
-  border-radius: 5px;
-  background-clip: padding-box; }
+  margin-bottom: 0; }
 
 pre {
   display: inline-block;
   padding: 3px;
-  margin: 0px 0px 0px 5px;
+  margin: 0 0 0 5px;
   color: #E27057;
   background-color: #f5f5f5;
   border: 1px solid rgba(204, 204, 204, 0);
@@ -5940,15 +5928,31 @@ pre {
 
 hr {
   display: block;
-  margin: 11px 0px;
+  margin: 11px 0;
   height: 1px;
   border-bottom: 1px solid #dad9d1;
   background: #EAE9E3; }
   hr.no-margin {
-    margin: 0px; }
+    margin: 0; }
+
+.info {
+  display: inline-block;
+  margin: 25px 0 0 0;
+  padding: 10px;
+  border: 1px solid rgba(103, 99, 99, 0.29);
+  border-radius: 5px;
+  background-clip: padding-box;
+  color: #676363;
+  background: rgba(255, 255, 255, 0.39);
+  font-size: 15px; }
+
+.content {
+  margin: 0 auto;
+  width: 1200px; }
 
 iframe {
-  min-height: 598px;
+  margin: 0 auto;
+  min-height: 605px;
   margin: 25px auto 20px auto;
   -webkit-transition: width 0.5s ease;
   transition: width 0.5s ease;
@@ -5958,7 +5962,8 @@ iframe {
   background-clip: padding-box;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
   iframe.xs {
-    width: 482px; }
+    min-height: 615px;
+    width: 480px; }
   iframe.sm {
     width: 770px; }
   iframe.md {
@@ -6004,6 +6009,9 @@ iframe {
 .custom-layout .box div {
   -webkit-transition: background-color 0.7s ease;
   transition: background-color 0.7s ease; }
+  @media (min-width: 768px) {
+    .custom-layout .box div {
+      margin-bottom: 15px; } }
   @media (min-width: 768px) {
     .custom-layout .box div {
       background-color: #fbad69; } }
