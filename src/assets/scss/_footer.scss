@@ -1,43 +1,45 @@
 #main-footer {
-  color: $text;
   position: absolute;
   left: 0;
   right: 0;
   bottom: 0;
-  padding-bottom: 10px;
-  padding-top: 6px;
-  border-top: 1px solid rgba(103, 99, 99, 0.13);
+  padding-bottom: 7px;
+  min-width: $screen-lg-min;
+  color: $text;
 
-  ul {
-    text-align: center;
-    margin: 2px 0px 0px 0px;
+  .content {
 
-    li {
-      display: inline;
+    ul {
+      text-align: center;
+      margin: 3px 0 0 0;
 
-      &:hover {
+      li {
+        display: inline;
+
+        &:hover {
+          a {
+            color: inherit;
+          }
+        }
+
+        &:not(:first-child):before {
+          content: "|";
+          color: $text;
+        }
+
         a {
           color: inherit;
+          padding:0 4px;
+          text-decoration: none;
         }
       }
-
-      &:not(:first-child):before {
-        content: "|";
-        color: $text;
-      }
-
-      a {
-        color: inherit;
-        padding: 0px 4px;
-        text-decoration: none;
-      }
     }
-  }
 
-  .gizra-logo {
-    font-size: 20px;
-    text-transform: lowercase;
-    font-family: Abril Fatface;
-//    color: $gizra;
+    .gizra-logo {
+      font-size: 20px;
+      text-transform: lowercase;
+      font-family: Abril Fatface;
+      color: $gizra;
+    }
   }
 }
