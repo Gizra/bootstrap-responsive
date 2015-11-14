@@ -6,11 +6,13 @@
 @import "footer";
 
 html {
+  position: relative;
   min-height: 100%;
   background: $body-bg;
 }
 
 body {
+  padding-bottom: 60px;
   font-family: 'Fira Sans', arial, sans-serif;
 }
 
@@ -72,9 +74,6 @@ hr {
 }
 
 iframe {
-  position: absolute;
-  left: 0;
-  right: 0;
   margin: 0px auto;
   min-height: 620px;
   margin: 25px auto 20px auto;

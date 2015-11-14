@@ -5871,12 +5871,12 @@ button.close {
   left: 0;
   right: 0;
   bottom: 0;
-  padding-bottom: 15px;
+  padding-bottom: 7px;
   min-width: 1200px;
   color: #676363; }
   #main-footer .content ul {
     text-align: center;
-    margin: 10px 0px 0px 0px; }
+    margin: 3px 0px 0px 0px; }
     #main-footer .content ul li {
       display: inline; }
       #main-footer .content ul li:hover a {
@@ -5895,10 +5895,12 @@ button.close {
     color: #e27058; }
 
 html {
+  position: relative;
   min-height: 100%;
   background: #ecebe5; }
 
 body {
+  padding-bottom: 60px;
   font-family: 'Fira Sans', arial, sans-serif; }
 
 h1 {
@@ -5949,9 +5951,6 @@ hr {
   width: 1200px; }
 
 iframe {
-  position: absolute;
-  left: 0;
-  right: 0;
   margin: 0px auto;
   min-height: 620px;
   margin: 25px auto 20px auto;
